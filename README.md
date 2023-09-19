@@ -1,4 +1,7 @@
-# Team7_AppDabang ☕️
+<div align="center">
+
+  ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Team7_AppDabang&nbsp;☕️)
+</div>
 
 <img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="400" height = "200" />
 <br/>
