@@ -5,7 +5,7 @@
   <img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="400" height = "200" />
   <br>
   
-  ### 함께 힘을 모아 재밌게 iOS 개발을 시작한 이들의 모임
+  ### 🍎 함께 힘을 모아 재밌게 iOS 개발을 시작한 이들의 모임
   
   <br>
   <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=Xcode&logoColor=white" />
