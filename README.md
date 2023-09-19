@@ -11,12 +11,8 @@
 	<img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
 </div>
 <br/>
+<br/>
 
-
-| <img src="" alt="gong" width="50px" height="50px" /> | <img src="" alt="moon" width="50px" height="50px" /> | <img src="" alt="chang" width="50px" height="50px" /> | <img src="" alt="jung" width="50px" height="50px" /> | <img src="" alt="jung" width="50px" height="50px" /> |
-| :---: | :---: | :---: | :---: | :---: |
-| 조민식 | 박선구 | 박호건 | 이경헌 | 이창준 |
-| ISTP | ISFP | ISTP | ENFP | INFJ |
 
 ## Members(팀 소개)
 ![이미지](https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true)
