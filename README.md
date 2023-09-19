@@ -1,22 +1,21 @@
 <div align="center">
 
   ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Team7_AppDabang&nbsp;☕️)
+
+  <img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="400" height = "200" />
+  <br>
+  
+  ### 함께 힘을 모아 재밌게 iOS 개발을 시작한 이들의 모임
+  
+  <br>
+  <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=Xcode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Swift-F05138?style=flat&logo=Swift&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
 </div>
 
-<img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="400" height = "200" />
-<br/>
-<br>
-  함께 힘을 모아 재밌게 ios 개발을 시작한 이들의 모임
-<br/>
-<br>
-<div align="left">
-	<img src="https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=Xcode&logoColor=white" />
-	<img src="https://img.shields.io/badge/Swift-F05138?style=flat&logo=Swift&logoColor=white" />
-	<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
-	<img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
-</div>
-<br/>
-<br/>
+</br>
+</br>
 
 
 ## 👨‍💻 Members(팀 소개)
