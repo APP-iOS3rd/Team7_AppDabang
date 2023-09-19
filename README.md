@@ -1,8 +1,10 @@
 <div align="center">
 
   ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Team7_AppDabang&nbsp;☕️)
-
-  <img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="400" height = "200" />
+  <div align="center">
+    <img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="300" height="150" />
+    <img src="https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true" alt="이미지" width="300" height="150" />
+  </div>
   <br>
   
   ### 🍎 함께 힘을 모아 재밌게 iOS 개발을 시작한 이들의 모임
@@ -17,14 +19,14 @@
 </br>
 </br>
 
-
 ## 👨‍💻 Members(팀 소개)
-<img src="https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true" alt="이미지" width="400px" style="height: auto;" />
 
 | <img src="https://avatars.githubusercontent.com/u/56242414?v=4" alt="조민식" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/101086750?v=4" alt="박선구" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/75073299?v=4" alt="박호건" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/83914919?v=4" alt="이경헌" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/109324421?v=4" alt="이창준" width="50px" height="50px" /> |
 | :---: | :---: | :---: | :---: | :---: |
 | <a href="https://github.com/mongsik98" style="text-decoration: none;">조민식</a> | <a href="https://github.com/Wegbereiterin" style="text-decoration: none;">박선구</a> | <a href="https://github.com/ghrjs1998" style="text-decoration: none;">박호건</a> | <a href="https://github.com/BOLTB0X" style="text-decoration: none;">이경헌</a> | <a href="https://github.com/Phangg" style="text-decoration: none;">이창준</a> |
 | ISTP | ISFP | ISTP | ENFP | INFJ |
+
+<br>
 
 <details>
 <summary>조민식 ISTP (팀장)</summary>
