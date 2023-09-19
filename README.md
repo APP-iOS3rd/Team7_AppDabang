@@ -6,7 +6,7 @@
 | ISTP | ISFP | ISTP | ENFP | INFJ |
 
 ## Members(팀 소개)
-![이미지]()
+![이미지](https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true)
 
 <details>
 <summary>조민식 ISTP **(팀장)**</summary>
