@@ -19,6 +19,11 @@
 ## Members(팀 소개)
 ![이미지](https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true)
 
+| <img src="https://avatars.githubusercontent.com/u/56242414?v=4" alt="조민식" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/101086750?v=4" alt="박선구" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/75073299?v=4" alt="박호건" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/83914919?v=4" alt="이경헌" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/109324421?v=4" alt="이창준" width="50px" height="50px" /> |
+| :---: | :---: | :---: | :---: | :---: |
+| 조민식 | 박선구 | 박호건 | 이경헌 | 이창준 |
+| ISTP | ISFP | ISTP | ENFP | INFJ |
+
 <details>
 <summary>조민식 ISTP (팀장)</summary>
 
