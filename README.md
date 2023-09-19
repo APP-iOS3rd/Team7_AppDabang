@@ -10,10 +10,18 @@
   ### 🍎 함께 힘을 모아 재밌게 iOS 개발을 시작한 이들의 모임
   
   <br>
-  <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=Xcode&logoColor=white" />
-  <img src="https://img.shields.io/badge/Swift-F05138?style=flat&logo=Swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
+  <a href="https://apps.apple.com/kr/app/xcode/id497799835?mt=12" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=Xcode&logoColor=white" />
+  </a>
+  <a href="https://developer.apple.com/kr/swift/" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Swift-F05138?style=flat&logo=Swift&logoColor=white" />
+  </a>
+  <a href="" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/>
+  </a>
+  <a href="https://www.notion.so/7-3407b53edb674d36b0076c7196cd8cb9?pvs=4" style="text-decoration: none;">
+    <img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
+  </a>
 </div>
 
 </br>
