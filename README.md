@@ -21,7 +21,7 @@
 
 | <img src="https://avatars.githubusercontent.com/u/56242414?v=4" alt="조민식" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/101086750?v=4" alt="박선구" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/75073299?v=4" alt="박호건" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/83914919?v=4" alt="이경헌" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/109324421?v=4" alt="이창준" width="50px" height="50px" /> |
 | :---: | :---: | :---: | :---: | :---: |
-| 조민식 | 박선구 | 박호건 | 이경헌 | 이창준 |
+| <a href="https://github.com/mongsik98" style="text-decoration: none;">조민식</a> | <a href="https://github.com/Wegbereiterin" style="text-decoration: none;">박선구</a> | <a href="https://github.com/ghrjs1998" style="text-decoration: none;">박호건</a> | <a href="https://github.com/BOLTB0X" style="text-decoration: none;">이경헌</a> | <a href="https://github.com/Phangg" style="text-decoration: none;">이창준</a> |
 | ISTP | ISFP | ISTP | ENFP | INFJ |
 
 <details>
