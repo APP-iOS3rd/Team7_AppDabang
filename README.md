@@ -9,7 +9,7 @@
 ![이미지](https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true)
 
 <details>
-<summary>조민식 ISTP **(팀장)**</summary>
+<summary>조민식 ISTP (팀장)</summary>
 
 올해 3월에 컴퓨터공학과 학부를 갓 졸업한 취준생입니다. 
 <br/>
@@ -18,8 +18,6 @@
 저는 몇몇 악기들을 다룰 줄 알고, 맛있는 음식을 먹는 걸 좋아합니다.
 <br/>
 </details>
-
-<br/>
 
 <details>
 <summary>박선구 ISFP</summary>
@@ -35,7 +33,6 @@
 
 </details>
 
-
 <details>
 <summary>박호건 ISTP</summary>
 
@@ -46,7 +43,6 @@
 <br/>
 
 </details>
-
 
 <details>
 <summary>이경헌 ENFP</summary>
