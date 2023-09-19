@@ -1,6 +1,9 @@
 # Team7_AppDabang☕️
 
-
+| <img src="" alt="gong" width="50px" height="50px" /> | <img src="" alt="moon" width="50px" height="50px" /> | <img src="" alt="chang" width="50px" height="50px" /> | <img src="" alt="jung" width="50px" height="50px" /> | <img src="" alt="jung" width="50px" height="50px" /> |
+| :---: | :---: | :---: | :---: | :---: |
+| 조민식 | 박선구 | 박호건 | 이경헌 | 이창준 |
+| ISTP | ISFP | ISTP | ENFP | INFJ |
 
 
 
