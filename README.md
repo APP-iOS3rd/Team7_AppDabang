@@ -10,7 +10,7 @@
   ### 🍎 함께 힘을 모아 재밌게 iOS 개발을 시작한 이들의 모임
   
   <br>
-  <a href="https://apps.apple.com/kr/app/xcode/id497799835?mt=12" style="text-decoration: none;">
+  <a href="https://developer.apple.com/kr/xcode/" style="text-decoration: none;">
     <img src="https://img.shields.io/badge/Xcode-147EFB?style=flat&logo=Xcode&logoColor=white" />
   </a>
   <a href="https://developer.apple.com/kr/swift/" style="text-decoration: none;">
