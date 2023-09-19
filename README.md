@@ -1,4 +1,4 @@
-# Team7_AppDabang☕️
+# Team7_AppDabang ☕️
 
 <img src = "https://github.com/APP-iOS3rd/Team7_AppDabang/assets/56242414/15323068-d84d-4058-b88e-e7d5d47afa3b" width="400" height = "200" />
 <br/>
@@ -16,7 +16,7 @@
 <br/>
 
 
-## Members(팀 소개)
+## 👨‍💻 Members(팀 소개)
 <img src="https://github.com/APP-iOS3rd/Team7_AppDabang/blob/main/resume/logoimg.png?raw=true" alt="이미지" width="400px" style="height: auto;" />
 
 | <img src="https://avatars.githubusercontent.com/u/56242414?v=4" alt="조민식" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/101086750?v=4" alt="박선구" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/75073299?v=4" alt="박호건" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/83914919?v=4" alt="이경헌" width="50px" height="50px" /> | <img src="https://avatars.githubusercontent.com/u/109324421?v=4" alt="이창준" width="50px" height="50px" /> |
@@ -86,26 +86,10 @@
 ```
 </details>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
 <br>
 
-## 멘토 : 이소영멘토님
+## 🧚‍♀️ 멘토 : 이소영멘토님
 ### 바라는 점
 
 - 현재 내 실력, 상황에서 무엇을 준비해야하고, 어떤 것을 해야하는지 구체적인 가이드라인을 제시해 주시면 좋을 것 같습니다.
@@ -114,27 +98,15 @@
 
 <br>
 
-## 팀 목표
+## 🧞‍♂️ 팀 목표
 - 협업을 통해 처음부터 끝가지 앱을 완성적으로 만들어보는 것.
 
 <br>
 
-## 팀규칙
+## 👮‍♂️ 팀규칙
 - 서로 최대한 친절하게 대해주기
 - 적극적으로 활동 참여하기
 - 일단 상대방의 말을 끝까지 들어보기
 - 불편한 점이 있으면 바로 말하기
 - 어려운 점이 있다면 도와주기
 - 멘토링 30분 전에 미리 모여서 서로 피드백하기
----
-
-
-
-
-
-
-
-
-
-
-
