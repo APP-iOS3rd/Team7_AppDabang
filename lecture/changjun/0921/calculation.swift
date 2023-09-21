@@ -45,9 +45,9 @@ struct Calculation {
 
     func exercise06() {
         func getHMS(seconds: Int) -> (Int, Int, Int) {
-            var h = (seconds / 60) / 60
-            var m = (seconds / 60) % 60
-            var s = seconds % 60
+            let h = (seconds / 60) / 60
+            let m = (seconds / 60) % 60
+            let s = seconds % 60
             return (h, m, s)
         }
 

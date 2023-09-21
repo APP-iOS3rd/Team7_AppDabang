@@ -9,7 +9,7 @@ import Foundation
 
 struct Conditional {
     
-    // MARK: - 조건문 예제 사용 [ 입력문 함수 ]
+    // MARK: - [ 정수 입력문 함수 ]
     private func getIntTypeInputValue() -> Int {
         guard let input = readLine(), let intNum = Int(input) else {
             print("입력 값 오류 - 정수를 입력하세요.")
@@ -130,17 +130,22 @@ struct Conditional {
      합격입니다!
      */
     func exercise06() {
-        var subjects: Dictionary<String, Int> = ["소프트웨어 설계": 0, "2과목 소프트웨어 개발": 0, "3과목 데이터베이스 구축": 0, "4과목 프로그래밍 언어 활용": 0, "5과목 정보시스템 구축관리": 0]
+        var subjects: Dictionary<String, Int> = [
+            "소프트웨어 설계": 0,
+            "소프트웨어 개발": 0,
+            "데이터베이스 구축": 0,
+            "프로그래밍 언어 활용": 0,
+            "정보시스템 구축관리": 0
+        ]
+        
         var idx = 1
-        var totalScore = 0
         for (key, _) in subjects {
             print("\(idx)과목 \(key): ", terminator: "")
-            let score = getIntTypeInputValue()
-            subjects[key] = score
-            totalScore += score
+            subjects[key] = getIntTypeInputValue()
             idx += 1
         }
-        if totalScore < 60 || subjects.values.contains(where: { $0 < 8 })  {
+        
+        if subjects.values.reduce(0, { $0 + $1 }) < 60 || subjects.values.contains(where: { $0 < 8 }) {
             print("불합격입니다!")
         } else {
             print("합격입니다!")
