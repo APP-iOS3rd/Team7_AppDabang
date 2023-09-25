@@ -29,12 +29,12 @@ struct Loop {
         return input
     }
     
-    // MARK: - [ Y or N 답변 입력 함수 ]
-    private func getAnswerInputValue(message msg: String) -> String {
+    // MARK: - [ (x) or (y) 답변 입력 함수 ]
+    private func getAnswerInputValue(message msg: String, _ x: String, _ y: String) -> String {
         print("\(msg)", terminator: "")
-        guard let input = readLine(), (input == "N" || input == "Y") else {
+        guard let input = readLine(), (input == "\(x)" || input == "\(y)") else {
             print("입력 값 오류 - 올바른 값을 입력하세요.")
-            return getAnswerInputValue(message: msg)
+            return getAnswerInputValue(message: msg, x, y)
         }
         return input
     }
@@ -168,7 +168,7 @@ struct Loop {
                 break
             } else {
                 print("아이디와 비밀번호가 잘못되었습니다.")
-                let answer = getAnswerInputValue(message: "계속 하시겠습니까? (Y/N): ")
+                let answer = getAnswerInputValue(message: "계속 하시겠습니까? (Y/N): ", "Y", "N")
                 if answer == "N" {
                     break
                 }
@@ -203,22 +203,26 @@ struct Loop {
      종료되었습니다.
      */
     func whileExercise06() {
-        let num1 = getIntTypeInputValue(message: "첫 번째 정수를 입력하세요: ")
-        let num2 = getIntTypeInputValue(message: "두 번째 정수를 입력하세요: ")
-        let pickNumber = getIntTypeInputValue(message: "1.더하기 2.빼기 : ")
         
-        while true {
-            if pickNumber == 1 {
-                print("더하기 연산 결과는 \(num1 + num2)입니다.")
-                break
-            } else if pickNumber == 2 {
-                print("빼기 연산 결과는 \(num1 - num2)입니다.")
-                break
+        func calculatorProgram() {
+            let num1 = getIntTypeInputValue(message: "첫 번째 정수를 입력하세요: ")
+            let num2 = getIntTypeInputValue(message: "두 번째 정수를 입력하세요: ")
+            let pickNumber = Int(getAnswerInputValue(message: "1.더하기 2.빼기 : ", "1", "2"))
+            
+            while true {
+                if pickNumber == 1 {
+                    print("더하기 연산 결과는 \(num1 + num2)입니다.")
+                    break
+                } else if pickNumber == 2 {
+                    print("빼기 연산 결과는 \(num1 - num2)입니다.")
+                    break
+                }
             }
         }
-        
+
         while true {
-            let answer = getAnswerInputValue(message: "다시 실행 하시겠습니까? (Y/N): ")
+            calculatorProgram()
+            let answer = getAnswerInputValue(message: "다시 실행 하시겠습니까? (Y/N): ", "Y", "N")
             if answer == "N" {
                 break
             }
