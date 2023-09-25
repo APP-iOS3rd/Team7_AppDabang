@@ -32,16 +32,16 @@ struct Loop {
     // MARK: - 약수 구하기 함수
     private func getDivisors(_ num: Int) -> [Int] {
         guard num != 1 else { return [1] }
-        var arr = [Int]()
+        var divisorsSet: Set<Int> = []
         let squareRoot = Int(sqrt(Double(num)))
         for n in 1...squareRoot {
             let (q, r) = num.quotientAndRemainder(dividingBy: n)
             if r == 0 {
-                arr.append(q)
-                arr.append(n)
+                divisorsSet.insert(q)
+                divisorsSet.insert(n)
             }
         }
-        return arr.sorted()
+        return Array(divisorsSet).sorted()
     }
 
     // MARK: - while 예제 7
