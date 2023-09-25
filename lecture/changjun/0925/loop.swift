@@ -328,21 +328,16 @@ struct Loop {
 //       ******
 //        ****
 //         **
-        var left = "     "
-        var right = "     "
+        var text4 = "     "
         for i in 1...10 {
             if i <= 5 {
-                left.removeFirst()
-                left += "*"
-                right.removeLast()
-                right = "*" + right
+                text4.removeFirst()
+                text4 += "*"
             } else if i > 6 {
-                left.removeLast()
-                left = " " + left
-                right.removeFirst()
-                right += " "
+                text4.removeLast()
+                text4 = " " + text4
             }
-            print("\(left + right)")
+            print("\(text4 + text4.reversed())")
         }
         
     }
