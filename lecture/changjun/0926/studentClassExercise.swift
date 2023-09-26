@@ -28,11 +28,11 @@ class Student {
     
     func show() {
         let multiLineText = """
-                            \(name)님 안녕하세요.
-                            [ \(number), \(age)살 ]
-                            \(name)님의 Swift 점수는 \(scoreSwift)점 입니다.
-                            \(name)님의 iOS 점수는 \(scoreiOS)점 입니다.
-                            \(name)님의 Web 점수는 \(scoreWeb)점 입니다.
+                            \(self.name)님 안녕하세요.
+                            [ \(self.number), \(self.age)살 ]
+                            \(self.name)님의 Swift 점수는 \(self.scoreSwift)점 입니다.
+                            \(self.name)님의 iOS 점수는 \(self.scoreiOS)점 입니다.
+                            \(self.name)님의 Web 점수는 \(self.scoreWeb)점 입니다.
                             """
         print(multiLineText)
     }

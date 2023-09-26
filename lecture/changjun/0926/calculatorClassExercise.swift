@@ -19,31 +19,31 @@ class Calculator {
     }
     
     func setNum1(newNum: Int) {
-        let tmp = num1
-        num1 = newNum
-        showChangeValue(before: tmp, after: num1)
+        let tmp = self.num1
+        self.num1 = newNum
+        showChangeValue(before: tmp, after: self.num1)
     }
     
     func setNum2(newNum: Int) {
-        let tmp = num2
-        num2 = newNum
-        showChangeValue(before: tmp, after: num2)
+        let tmp = self.num2
+        self.num2 = newNum
+        showChangeValue(before: tmp, after: self.num2)
     }
     
     func sum() -> Int {
-        return num1 + num2
+        return self.num1 + self.num2
     }
     
     func sub() -> Int {
-        return num1 - num2
+        return self.num1 - self.num2
     }
     
     func mul() -> Int {
-        return num1 * num2
+        return self.num1 * self.num2
     }
     
     func div() -> Int {
-        return num1 / num2
+        return self.num1 / self.num2
     }
   
 }

@@ -19,19 +19,19 @@ class Person {
     }
     
     func getName() {
-        print("이름: \(name)")
+        print("이름: \(self.name)")
     }
     
     func setName(newName: String) {
-        name = newName
+        self.name = newName
     }
     
     func getAge() {
-        print("나이: \(age)")
+        print("나이: \(self.age)")
     }
     
     func setAge(newAge: Int) {
-        age = newAge
+        self.age = newAge
     }
     
 }
