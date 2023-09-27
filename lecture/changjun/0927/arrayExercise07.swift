@@ -10,12 +10,7 @@ import Foundation
 // MARK: - array 예제 07
 
 class ArrayExercise07 {
-    private var arr = [Int]()
-    
-    init(arrCount: Int) {
-        self.arr = Array(repeating: 0, count: arrCount)
-        runProgram()
-    }
+    private var arr = Array(repeating: 0, count: 10)
         
     func runProgram() {
         inputAndSetArray()

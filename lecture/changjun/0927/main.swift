@@ -17,9 +17,11 @@ let arrayExercise01_05 = ArrayExercise01_05(arrCount: 10)
 //print(arrayExercise01_05.arrayExercise04())
 //print(arrayExercise01_05.arrayExercise05())
 
-//let arrayExercise06 = ArrayExercise06(stringArr: ["수", "박"])
+let arrayExercise06 = ArrayExercise06()
+//arrayExercise06.runProgram()
 
-//let arrayExercise07 = ArrayExercise07(arrCount: 10)
+let arrayExercise07 = ArrayExercise07()
+//arrayExercise07.runProgram()
 
 let arrayExercise08_09 = ArrayExercise08_09()
 //arrayExercise08_09.arrayExercise08()
