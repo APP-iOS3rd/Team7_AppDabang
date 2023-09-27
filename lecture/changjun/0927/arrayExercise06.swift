@@ -10,12 +10,7 @@ import Foundation
 // MARK: - array 예제 06
 
 class ArrayExercise06 {
-    private var stringArr: [String]
-    
-    init(stringArr: [String]) {
-        self.stringArr = stringArr
-        runProgram()
-    }
+    private var stringArr = ["수", "박"]
     
     func greeting() {
         print("=== 수박 게임 시작! ===")
@@ -54,3 +49,4 @@ extension ArrayExercise06 {
     }
     
 }
+
