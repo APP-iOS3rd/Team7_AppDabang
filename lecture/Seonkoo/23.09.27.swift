@@ -298,24 +298,33 @@ print("=====================\n")
 
 
 //MARK: -
-//MARK: 배열예제 1
-var array : [Int] = [1,2,3,4,5,6,7,8,9,10]
+//MARK: 배열 예제 1
 
-for _ in 1...10 {
+//  1.정수형 데이터를 담을 수 있는 배열 array를 선언하세요
+//  2.정수형 데이터 10개를 담을 수 있도록 array배열을 생성하세요
+//  3.각각의 인덱스에 1~20까지의 랜덤수를 초기화하세요
+//  4.배열array의 각각에 인덱스에 들어있는 모든 데이터를 출력하세요.
+//  5.4번째 인덱스에 들어있는 값과 9번째 인덱스에 들어있는 값을 더하여 결과 값을 출력하세요
+//  6.각각의 인덱스에 들어있는 데이터를 모두 더하여 결과 값을 출력하세요
+//  7.배열 안에 있는 수의 평균을 구하여 출력하세요
+
+var array : [Int] = [1,2,3,4,5,6,7,8,9,10] //1,2
+
+for _ in 1...10 { //3
     let a = Int.random(in: 0...9)
     let b = Int.random(in: 1...20)
     array[a] = b
 }
-print(array) //4번째와 9번째의 합
-print(array[4] + array[9])
+print(array) //4
+print(array[4] + array[9]) //4번째와 9번째의 합 //5
 
 var sumArray = 0
-for i in array { //array의 전체 합
+for i in array { //array의 전체 합 //6
     sumArray += i
 }
 print(sumArray)
 
-var avg: Float = Float(sumArray) / 10
+var avg: Float = Float(sumArray) / 10 //7
 print(avg)
 
 //MARK: -
@@ -328,7 +337,7 @@ print(avg)
 //for i in 0...9{
 //    p = array[i] % 2
 //    if p == 0 {
-//        result.append(array[i])
+//        result.append(array[i]) //append = 배열 항목 추가
 //    }
 //}
 //print("array에 들어있는 짝수는 \(result)입니다.")
@@ -364,20 +373,99 @@ let minArray = array.min()! //min은 배열안에 있는 값중 최솟값을 찾
 print("가장 작은 값은 \(minArray)입니다.")
 
 //MARK: -
-//MARK: 배열 예제 6 (다시하기)
+//MARK: 배열 예제 6 (다시해보기)
 //숫자를 입력받아 짝수인 4의 경우 “수박수박”, 홀수인 3의 경우 “수박수“ 를 출력하는 프로그램을 작성하세요
 
 //var stArray : [String] = ["수","박"]
-//
+//print("=== 수박 게임 시작! ===")
 //print("숫자를 입력해주세요: ", terminator: "")
 //let number = Int(readLine()!)!
 //
-////number == 4, stArray[0]
+//var resArr = ""
+//
+//for i in 1...number {
+//   let indexArray = (i - 1) % 2 // 짝수면 0 홀수면 1 저장
+//    resArr += stArray[indexArray] //
+//}
+//print(resArr)
+
+//MARK: -
+//MARK: 배열 예제 7
+//1차원 정수형 배열을 선언한 후 10개의 공간으로 생성합니다
+//숫자를 입력 받아 3의 배수인 숫자를 출력하는 프로그램을 작성하세요
+
+//var array7 = [Int](repeating: 0, count: 10)
+//var result7 = [Int]()
 //
 //
-//for _ in 1...number {
-//    if number % 2 == 0 {
-//        var stArraySum = stArray[2] + strArray[1]
-//        print(stArraySum)
+//for i in 1...10{
+//    print("\(i)번째 정수 입력: ", terminator: "")
+//    let inputNum = Int(readLine()!)!
+//    array7.remove(at: i-1)
+//    array7.insert(inputNum, at: i-1)
+//
+//    var num7 = array7[i-1] % 3
+//    if num7 == 0{
+//        result7.append(array7[i-1])
 //    }
 //}
+//
+//print("3의 배수:", terminator:" ")
+//for j in result7 {
+//    print(j, terminator:" ")
+//}
+////print("3의 배수: \(result7.map {String($0)}.joined(separator: " "))") //또 다른 방법
+
+//MARK: -
+//MARK: 배열 예제 8
+//다음과 같이 정답이 있을 때 사용자로부터 답을 입력받아 결과를 출력하고 총점을 출력하는 프로그램을 작성하세요
+
+//var answer8 : [Int] = [1, 1, 4, 2, 3]
+//var myAnswer = [Int]()
+//var point = 0
+//
+//for i in 1...5{
+//    print("\(i)번답: ", terminator: "")
+//    myAnswer.insert(Int(readLine()!)!, at: i-1)
+//}
+//
+//for j in 1...5{
+//    if answer8[j-1] == myAnswer[j-1] {
+//        print("O", terminator: " ")
+//        point += 20
+//    }else{
+//        print("X", terminator: " ")
+//    }
+//    if j == 5{
+//        print("총점: \(point)")
+//    }
+//}
+
+//MARK: -
+//MARK: 배열 예제 9
+//배열의 (인덱스) 값 만큼 별을 출력해보세요
+
+//var array9 : [Int] = [1,2,3,2,1]
+var array9 = [Int]()
+
+print("입력 횟수: ", terminator: "")
+let inputNum = Int(readLine()!)!
+
+for _ in 1...inputNum{
+    print("별의 갯수 입력: ", terminator: "")
+    let stars = Int(readLine()!)!
+    array9.append(stars)
+}
+
+for i in 1...array9.count {
+    print("")
+    print("\(array9[i-1]): ", terminator: "")
+    if array9[i-1] != 0 {
+        for _ in 1...array9[i-1] {
+            print("*", terminator: "")
+        }
+    }
+    if i >= array9.count {
+        print("\n")
+    }
+}
