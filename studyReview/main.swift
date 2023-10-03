@@ -784,17 +784,421 @@ func inputString(_ message: String) -> String{
 //MARK: for문 예제 8
 //2~30까지의 약수를 구하세요
 
-for i in 2...30{
-    print("\(i)의 약수: ", terminator: "")
-    for j in 1...i{
-        if i % j == 0{
-            print("\(j)", terminator: " ")
-            if j == i {
-                print("\n")
-            }
-        }
-    }
-}
+//for i in 2...30{
+//    print("\(i)의 약수: ", terminator: "")
+//    for j in 1...i{
+//        if i % j == 0{
+//            print("\(j)", terminator: " ")
+//            if j == i {
+//                print("\n")
+//            }
+//        }
+//    }
+//}
 
 //MARK: -
+//MARK: for문 에제 9
+//별찍기
 
+//for i in 1...5{
+//    print(" ")
+//    for j in 1...i{
+//        print("*",terminator: "")
+//    }
+//}
+
+//MARK: -
+//MARK: 별찍기 거꾸로
+
+//for i in (1...5).reversed(){
+//    print(" ")
+//    for j in 1...i{
+//        print("*",terminator: "")
+//    }
+//}
+
+//MARK: -
+//MARK: 별찍기 반대로
+
+//for i in 1...5{
+//    print("")
+//    for k in i...5{
+//        print(" ",terminator: "")
+//    }
+//    for j in 1...i{
+//        print("*",terminator: "")
+//    }
+//}
+
+//MARK: -
+//MARK: 별찍기 다이아
+
+//for i in 1...5{
+//    print("")
+//    for _ in i...5{
+//        print(" ",terminator: "")
+//    }
+//    for _ in 1...i{
+//        print("*",terminator: "")
+//    }
+//    for _ in 1...i{
+//        print("*", terminator: "")
+//    }
+//}
+//for p in (1...5).reversed(){
+//    print("")
+//    for _ in p...5{
+//        print(" ",terminator: "")
+//    }
+//    for _ in 1...p{
+//        print("*",terminator: "")
+//    }
+//    for _ in 1...p{
+//        print("*", terminator: "")
+//    }
+//}
+
+//MARK: -
+//MARK: 함수 예제 1
+//두 수의 합을 받아 아래와 같은 결과가 나올 수 있도록 addNumber() 를 작성하시오
+
+//func addNumber(_ num1: Int,_ num2: Int) -> Int {
+//    return num1 + num2
+//}
+//
+//let firstnum = inputLine("첫번째 수: ")
+//let seccondnum = inputLine("두번째 수: ")
+//
+//let result = addNumber(firstnum, seccondnum)
+//print("연산결과: \(result)")
+
+//MARK: -
+//MARK: 함수 예제 2
+//2개의 정수를 받아 2개의 숫자 중 더 큰 수를 반환하는 largerNumbers() 을 만들어보세요
+
+//func largerNumbers(_ num1: Int,_ num2: Int) -> Int{
+//    if num1 > num2{
+//        return num1
+//    }else if num2 > num1{
+//        return num2
+//    }else{
+//        return 0
+//    }
+//}
+//
+//let inputNum1 = inputLine("첫번째 수: ")
+//let inputNum2 = inputLine("두번째 수: ")
+//
+//let result = largerNumbers(inputNum1, inputNum2)
+//print("큰 수 확인: \(result)")
+
+//MARK: -
+//MARK: 함수 예제 3 *
+//2개의 정수를 받아 2개의 숫자 중 10에 더 가까운 수를 반환하는 close10() 을 만들어보세요
+
+//func close10(num1: Int, num2: Int) -> Int{
+//    if 10 - abs(num1) < 10 - abs(num2) {
+//        return num1
+//    }else if 10 - abs(num2) < 10 - abs(num1) {
+//        return num2
+//    }else{
+//        return 0
+//    }
+//    
+//}
+//
+//let inputNum1 = inputLine("첫번째 수: ")
+//let inputNum2 = inputLine("두번째 수: ")
+//
+//let result = close10(num1: inputNum1, num2: inputNum2)
+//print("10에 가까운 수: \(result)")
+
+//MARK: -
+//MARK: 함수 예제 4
+//2개의 정수 base, n을 받아 base의 n제곱 만큼 값을 반환하는 powerN() 를 작성하세요
+
+//func powerN(base : Float, n : Float) -> Float{
+//    return pow(base, n)
+//}
+//
+//let inputNum1 = inputLine("첫번째 수: ")
+//let inputNum2 = inputLine("두번째 수: ")
+//
+//let result = powerN(base: Float(inputNum1), n: Float(inputNum2))
+//print("결과 확인: \(Int(result))")
+
+//MARK: -
+//MARK: 함수 예제 5
+//키보드로부터 입력받은 두 개의 정수를 인자(매개변수)로 넘겨받아 num1에서 num2를 뺀 결과값을 절대값으로 바꾸어 출력하는 getAbsoluteValue( ) 를 구현하세요
+
+
+//func getAbsoluteValue(num1 : Int, num2 : Int) -> Int{
+//    return abs(num1 - num2)
+//}
+//
+//let inputNum1 = inputLine("첫번째 수: ")
+//let inputNum2 = inputLine("두번째 수: ")
+//
+//let result = getAbsoluteValue(num1: inputNum1, num2: inputNum2)
+//print("결과 확인: \(result)")
+
+//MARK: -
+//MARK: 함수 예제 6
+//두 개의 정수를 인자(매개변수)로 넘겨받아 앞의 정수가 뒤의 정수로 나누어지는지를 판별하는 isDivide( ) 를 작성하세요.
+//(이때 나누어지면 true, 나누어지지 않으면 false을 반환)
+
+//func isDivide(num1: Int, num2: Int) -> Bool{
+//    if num1 % num2 == 0 {
+//        return true
+//    }else if num1 % num2 != 0{
+//        return false
+//    }else{
+//        return false
+//    }
+//}
+//
+//let inputNum1 = inputLine("첫번째 수: ")
+//let inputNum2 = inputLine("두번째 수: ")
+//
+//let result = isDivide(num1: inputNum1, num2: inputNum2)
+//print("결과 확인: \(result)")
+
+//MARK: -
+//MARK: 함수 예제 7
+//약수를 구하는 getDivisor() 를 구현하세요
+
+//func getDivisior(num1: Int) {
+//    for i in 1...num1{
+//        if num1 % i == 0{
+//            print(i, terminator: " ")
+//        }
+//    }
+//}
+//let inputNum = inputLine("약수: ")
+//let divi = getDivisior(num1: inputNum)
+//print(divi)
+
+//MARK: -
+//MARK: 함수 예제 8
+//약수의 합을 구하여 반환하는 getSumOfDivisors() 를 구현하세요
+
+//func getSumOfDivisiors(num1: Int) -> Int{
+//    var result = 0
+//    for i in 1...num1{
+//        if num1 % i == 0{
+//            result += i
+//        }
+//    }
+//    return result
+//}
+//
+//let inputNum = inputLine("약수: ")
+//let result = getSumOfDivisiors(num1: inputNum)
+//print("\(inputNum)의 약수의 합: \(result)")
+
+//MARK: -
+//MARK: 함수 예제 9 *
+//startValue...endValue까지의 숫자 중 완전수를 출력하는 getPerfectNumber() 를 구현하세요
+
+
+//MARK: -
+//MARK: 함수 예제 10 *
+//startValue~endValue까지의 숫자 중 소수를 출력하는 getPrimeNumber() 를 구현하세요
+//func getPrimeNumber(num1: Int, num2: Int) {
+//    for i in num1...num2{
+//        for j in 1...i {
+//            if i % j == 0{
+//                print(i, terminator: " ")
+//            }
+//        }
+//    }
+//}
+//
+//let inputNum1 = inputLine("첫번째 수: ")
+//let inputNum2 = inputLine("두번째 수: ")
+//
+//getPrimeNumber(num1: inputNum1, num2: inputNum2)
+//print("결과 확인: \(result)")
+
+//MARK: -
+//MARK: 클래스 예제 0
+
+//class Pigbank {
+//    var mybank = 0
+//    
+//    func moneyIn (num: Int) {
+//        mybank += num
+//        show()
+//    }
+//    func moneyOut (num: Int){
+//        if mybank == 0 || mybank < 0{
+//            print("잔액이 부족합니다.")
+//        }else{
+//            mybank -= num
+//        }
+//        show()
+//    }
+//    func show() {
+//        print("현재 잔액: \(mybank)")
+//    }
+//}
+//
+//let bank = Pigbank()
+//bank.show()
+//bank.moneyIn(num: inputLine("입금: "))
+//bank.moneyOut(num: inputLine("출금: "))
+
+//MARK: -
+//MARK: 클래스 예제 1 ~ 3
+
+//class Student {
+//    var name : String
+//    var number : String
+//    var age : Int
+//    var scoreSwift : Int
+//    var scoreiOS : Int
+//    var scoreWeb : Int
+//    
+//    init(name: String, number: String, age: Int, scoreSwift: Int, scoreiOS: Int, scoreWeb: Int) {
+//        self.name = name
+//        self.number = number
+//        self.age = age
+//        self.scoreSwift = scoreSwift
+//        self.scoreiOS = scoreiOS
+//        self.scoreWeb = scoreWeb
+//    }
+//    func show(){
+//        print("\(name)님 안녕하세요.\n[ \(number), \(age)살 ]\n\(name)님의 Swift 점수는 \(scoreSwift)점 입니다.\n\(name)님의 iOS 점수는 \(scoreiOS)점 입니다.\n\(name)님의 Web 점수는 \(scoreWeb)점 입니다.")
+//    }
+//}
+//
+//var student1 = Student.init(name: "홍길동", number: "20200677", age: 22, scoreSwift: 50, scoreiOS: 89, scoreWeb: 77)
+//var student2 = Student.init(name: "김영희", number: "20190541", age: 26, scoreSwift: 90, scoreiOS: 85, scoreWeb: 70)
+//
+//student1.show()
+//print("===============")
+//student2.show()
+
+//MARK: -
+//MARK: 클래스 예제 4
+
+//class Person {
+//    var name: String
+//    var age: Int
+//    
+//    init(name: String, age: Int) {
+//        self.name = name
+//        self.age = age
+//    }
+//    func getName () -> String {
+//       return name
+//    }
+//    func setName (change: String) -> String{
+//        name = change
+//        return name
+//    }
+//    func getAge() -> Int {
+//        return age
+//    }
+//    func setAge(changeAge: Int) -> Int {
+//        age = changeAge
+//        return age
+//    }
+//}
+//
+//var st1 = Person(name: "홍길동", age: 25)
+//var st2 = Person(name: "김영희", age: 27)
+//print("이름: \(st1.name), 나이: \(st2.age)")
+//print("이름: \(st2.name), 나이: \(st2.age)")
+
+//MARK: -
+//MARK: 클래스 예제 5
+
+//class Caculator {
+//    var num1: Int
+//    var num2: Int
+//    
+//    init(num1: Int, num2: Int) {
+//        self.num1 = num1
+//        self.num2 = num2
+//    }
+//    func setNum1 (num: Int) -> Int {
+//        num1 = num
+//        return num1
+//    }
+//    func setNum2 (num: Int) -> Int {
+//        num2 = num
+//        return num2
+//    }
+//    func sum () -> Int{
+//       return num1 + num2
+//    }
+//    func sub () -> Int{
+//        return num1 - num2
+//    }
+//    func mul () -> Int{
+//        return num1 * num2
+//    }
+//    func div () -> Int{
+//        return num1 / num2
+//    }
+//}
+//
+//var cal = Caculator(num1: inputLine("1번째 수: "), num2: inputLine("2번째 수: "))
+//
+//print(cal.sum(), cal.setNum1(num: 75), cal.setNum2(num: 5), cal.sub(), cal.mul(), cal.div())
+
+//MARK: -
+//MARK: 클래스 예제 6
+
+//class TV {
+//    var name: String
+//    var year: Int
+//    var size: Int
+//    
+//    init(name: String, year: Int, size: Int) {
+//        self.name = name
+//        self.year = year
+//        self.size = size
+//    }
+//    func show() {
+//        print("\(name)에서 만든 \(year)년형 \(size)인치 TV")
+//    }
+//}
+//
+//let myTV = TV(name: "LG", year: 2023, size: 48)
+//myTV.show()
+
+//MARK: -
+//MARK: 별그리기 클래스
+
+//MARK: -
+//MARK: 배열 예제 1
+
+//var array : [Int] = []
+//for i in 1...10{
+//    array.insert(Int.random(in: 1...20), at: i-1)
+//}
+//print(array)
+//print(array[4] + array[9])
+//var sum = 0
+//for j in 1...10{
+//    sum += array[j-1]
+//}
+//print(sum)
+//print(Float(sum) / 10.0)
+
+//MARK: -
+//MARK: 배열 예제 2
+
+var array : [Int] = []
+for i in 1...10{
+    array.insert(Int.random(in: 1...20), at: i-1)
+}
+var result : [Int] = []
+for j in 1...10{
+    if array[j-1] % 2 == 0{
+        result.append(array[j-1])
+    }
+}
+print(result)
