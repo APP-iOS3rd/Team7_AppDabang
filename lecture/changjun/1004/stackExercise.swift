@@ -49,8 +49,7 @@ struct StackExercise {
             if let numericValue = Int(component) {
                 stack.append(numericValue)
             } else if stack.count >= 2 {
-                let num2 = stack.popLast()!
-                let num1 = stack.popLast()!
+                guard let num2 = stack.popLast(), let num1 = stack.popLast() else { return 0 }
                 
                 switch component {
                 case "+":
@@ -65,35 +64,35 @@ struct StackExercise {
                 }
             }
         }
-        return stack.last!
+        return stack.last ?? 0
     }
 
     /*
      stack 예제 3
      스택을 이용하여 중위 표기법(infix notation)으로 된 수식을 후위 표기법으로 변환하는 알고리즘을 설계하고 구현하세요.
-     예를 들어, "(2 + 3) * 4"는 "2 3 + 4 *"로 변환됩니다. 입력은 공백으로 구분된 문자열로 받으며, 출력은 공백으로 구분된 문자열로 반환하세요.
-     "(2 + 3) * 5 - (3 * (5 - 2))" => "2 3 + 5 * 3 5 2 - * -"
+     예를 들어, "( 2 + 3 ) * 4"는 "2 3 + 4 *"로 변환됩니다. 입력은 공백으로 구분된 문자열로 받으며, 출력은 공백으로 구분된 문자열로 반환하세요.
+     "( 2 + 3 ) * 5 - ( 3 * ( 5 - 2 ) )" => "2 3 + 5 * 3 5 2 - * -"
+     "10 + 21 - ( 20 - 19 ) * 2" => "10 21 + 20 19 - 2 * -"
      */
     func exercise03() -> String {
         var answer = [String]()
         var specialCharacter = [String]()
         let priorityOrder: [String: Int] = ["*": 1, "/": 1, "+": 2, "-": 2]
-        let inputValue = getStringInputValue(message: "중위 표기법 수식 입력: ")
+        let inputValue = getStringInputValue(message: "중위 표기법 수식 입력: ").components(separatedBy: " ").filter{ !$0.isEmpty }
         
         for char in inputValue {
-            let c = String(char)
             
-            switch c {
+            switch char {
             case "0"..."9":
-                answer.append(c)
+                answer.append(char)
             case "+", "-", "*", "/":
                 while let lastValue = specialCharacter.last, lastValue != "(",
-                      priorityOrder[c]! >= priorityOrder[lastValue]! {
+                      priorityOrder[char]! >= priorityOrder[lastValue]! {
                     answer.append(specialCharacter.popLast()!)
                 }
-                specialCharacter.append(c)
+                specialCharacter.append(char)
             case "(":
-                specialCharacter.append(c)
+                specialCharacter.append(char)
             case ")":
                 while let lastValue = specialCharacter.last, lastValue != "(" {
                     answer.append(specialCharacter.popLast()!)
