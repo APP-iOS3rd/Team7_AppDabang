@@ -469,3 +469,70 @@ for i in 1...array9.count {
         print("\n")
     }
 }
+
+//MARK: -
+//MARK: 스택 예제 1 (강사님 ver)
+//func checkParentheses(_ input: String) -> Bool {
+//
+//    var stack: [Character] = []
+//    for char in input {
+//        if char == "(" || char == "{" || char == "["{
+//            stack.append(char)
+//        } else if char == ")" || char == "}" || char == "]"{
+//            if stack.isEmpty {
+//                return false
+//            }
+//
+//            let top = stack.popLast()
+//            if (char == ")" && top != "(") || (char == "}" && top != "{") || (char == "]" && top != "[") {
+//                return false
+//            }
+//        }
+//    }
+//
+//    return stack.isEmpty
+//}
+//
+//print( checkParentheses("()()") )
+//print( checkParentheses("({[}])") )
+//print( checkParentheses("())(") )
+//print( checkParentheses("({}[()]())") )
+
+//MARK: -
+//MARK: 스택 예제 2 (강사님 ver)
+
+//func postFix(expression: String) -> Int{
+//
+//
+//    let tokens = expression.split(separator: " ") //문자열을 잘라서 나눠주기
+//
+//    var stack = [String]()
+//
+//    for token in tokens {
+//        if "+-*/".contains(token) {
+//            let right = Int(stack.popLast()!)! //꺼낸 것중 숫자 하나를 오른쪽에 배정
+//            let left = Int(stack.popLast()!)! //꺼낸 것중 숫자 하나를 왼쪽에 배정
+//
+//            switch token {
+//            case "+":
+//                stack.append(String(right + left))
+//            case "*":
+//                stack.append(String(right * left))
+//            case "-":
+//                stack.append(String(right - left))
+//            case "/":
+//                stack.append(String(right / left))
+//            default:
+//                break
+//            }
+//
+//        } else {
+//            stack.append(String(token))
+//        }
+//
+//    }
+//
+//   return (Int(stack.popLast()!)!)
+//}
+//
+//print(postFix(expression: "2 3 + 4 *"))
