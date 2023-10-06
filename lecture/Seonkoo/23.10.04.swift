@@ -535,3 +535,49 @@ for i in 1...array9.count {
 //}
 //
 //print(postFix(expression: "2 3 + 4 *"))
+//MARK: -
+//피보나치 수열
+//
+//func fibonacci(_ n : Int) -> Int {
+//    if n <= 1 {
+//        return n
+//    }else{
+//        return fibonacci(n - 2) + fibonacci(n - 1)
+//    }
+//}
+//print(fibonacci(5))
+//print((1...9).map {fibonacci($0)})
+
+//MARK: -
+//MARK: 재귀1번 다시 해보기
+
+//func myCount(_ i : [Int]) -> Int{
+//
+//    //나가는 것
+//    if i.isEmpty {
+//        return 0
+//    }else{
+//        return 1 + myCount(i.dropLast()) //재귀를 할때 마지막을 리스트에서 제거 하고 숫자 1을 더한다.
+//    }
+//}
+//print(myCount([1,2,3,4,5]))
+
+//MARK: -
+//MARK: 재귀 2번 다시 해보기
+
+func myMax(_ i : [Int]) -> Int {
+    var array = i
+    if array.count == 1{
+        return array[0]
+    }
+    if array[0] < array[1]{
+        array.remove(at: 0)
+    }
+    else if array[1] < array[0]{
+        array.remove(at: 1)
+    }
+    return myMax(array)
+}
+
+print(myMax([1,4,5,7,9,2,8,10]))
+
