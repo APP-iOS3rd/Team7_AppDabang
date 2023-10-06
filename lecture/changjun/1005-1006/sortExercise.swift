@@ -59,6 +59,20 @@ struct SortExercise {
     }
     
     /*
+     퀵 정렬
+     [10,5,2,3] -> [2,3,5,10]
+     [6,5,1,4,7,2,3] -> [1,2,3,4,5,6,7]
+     */
+    func quickSort(_ arr: [Int]) -> [Int] {
+        guard let pivot = arr.first else { return arr }
+        
+        var (left, right) = ([Int](), [Int]())
+        arr[1...].forEach { $0 < pivot ? left.append($0) : right.append($0) }
+        
+        return quickSort(left) + [pivot] + quickSort(right)
+    }
+    
+    /*
      정렬 예제 1
      가장 많이 들은 것부터 가장 적게 들은 것 순서로 정렬하여 가장 좋아하는 곡 순위를 알고 싶다면?
      */

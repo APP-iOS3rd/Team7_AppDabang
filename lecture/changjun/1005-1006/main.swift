@@ -11,7 +11,7 @@ import Foundation
 let sortExercise = SortExercise()
 print(sortExercise.bubbleSort([5,3,6,2,1]))
 print(sortExercise.selectionSort([5,3,6,2,1]))
-
+print(sortExercise.quickSort([6,5,1,4,7,2,3]))
 let myPlayList = [Song(title: "롤린 (Rollin')", artist: "브레이브걸스", play: 156),
                   Song(title: "Celebrity", artist: "아이유", play: 141),
                   Song(title: "On The Ground", artist: "로제 (ROSÉ)", play: 35),
@@ -21,7 +21,6 @@ let myPlayList = [Song(title: "롤린 (Rollin')", artist: "브레이브걸스", 
                   Song(title: "Dynamite", artist: "방탄소년단", play: 111)
 ]
 sortExercise.sortExercise01_1(data: myPlayList).forEach { print($0) }
-
 let jsonFile = "sortExerciseData.json"
 sortExercise.sortExercise01_2(file: jsonFile)!.forEach{ print($0) }
 
@@ -33,4 +32,7 @@ print(recursiveFunctionExercise.fibonacci_1(num: 5))
 print((1...9).map { recursiveFunctionExercise.fibonacci_1(num: $0) })
 print(recursiveFunctionExercise.fibonacci_2(num: 5))
 print((1...6).map { recursiveFunctionExercise.fibonacci_2(num: $0) })
+let f = recursiveFunctionExercise.fibonacci_3()
+(1...6).forEach { _ in print(f.next()!) }
+print((1...6).map { _ in f.next()! })
 print(recursiveFunctionExercise.divideSquare(x: 1680, y: 640))
