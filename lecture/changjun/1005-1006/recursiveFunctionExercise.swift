@@ -36,22 +36,33 @@ struct RecursiveFunctionExercise {
      피보나치 수열
      1) 일반 함수 구현
      2) 재귀 함수 구현
+     3) 반복자
      */
     func fibonacci_1(num: Int) -> Int {
-        var result = Array(repeating: 0, count: num + 1)
-        result[1] = 1
-        var index = 2
-        while index <= num {
-            result[index] = result[index - 1] + result[index - 2]
-            index += 1
+        var a = 1
+        var b = 1
+        if num == 1 || num == 2 {
+            return 1
         }
-        return result[num]
+        for _ in 1..<num {
+            (a, b) = (b, a + b)
+        }
+        return a
     }
     
     func fibonacci_2(num: Int) -> Int {
         if num <= 1 { return num }
         
         return fibonacci_2(num: num - 1) + fibonacci_2(num: num - 2)
+    }
+    
+    func fibonacci_3() -> AnyIterator<Int> {
+        var a = 0
+        var b = 1
+        return AnyIterator {
+            (a, b) = (b, a + b)
+            return a
+        }
     }
     
     /*
@@ -62,14 +73,13 @@ struct RecursiveFunctionExercise {
      주어진 문제를 작게 줄여서 기본 단계가 되도록 만드는 법을 찾는다
      */
     func divideSquare(x: Int, y: Int) -> Int {
-        return x > y ? getGCD(x, y) : getGCD(y, x)
-        
-        func getGCD(_ x: Int, _ y: Int) -> Int {
-            if y == 0 {
-                return x
-            }
-            return getGCD(y, (x % y))
+        if x == 0 || y == 0 {
+            return x + y
         }
+        if x > y {
+            return divideSquare(x: (x % y), y: y)
+        }
+        return divideSquare(x: y, y: (y % x))
     }
 
 }
