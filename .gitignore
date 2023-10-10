@@ -1,1 +1,8 @@
 .DS_Store
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+.build/
+.swiftpm
