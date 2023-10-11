@@ -1,9 +1,13 @@
+//
+//  ExerciseView01.swift
+//  DemoProject2
+//
+//  Created by phang on 10/11/23.
+//
+
 import SwiftUI
-import PlaygroundSupport
 
-// MARK: - SwiftUI Exercise 1
-
-struct ExerciseView: View {
+struct ExerciseView01: View {
     @State private var num1: Int?
     @State private var num2: Int?
     @State private var result = (add: 0, sub: 0, multiple: 0, divide:0)
@@ -43,7 +47,7 @@ struct ExerciseView: View {
                 }
             }
         }
-        .padding(10)
+        .padding(50)
     }
     
     private func buttonPressed() -> (Int, Int, Int, Int) {
@@ -85,4 +89,6 @@ enum Operator: String {
     }
 }
 
-PlaygroundPage.current.setLiveView(ExerciseView().padding(100))
+#Preview {
+    ExerciseView01()
+}

@@ -1,9 +1,13 @@
+//
+//  ExerciseView02.swift
+//  DemoProject2
+//
+//  Created by phang on 10/11/23.
+//
+
 import SwiftUI
-import PlaygroundSupport
 
-// MARK: - SwiftUI Exercise 2
-
-struct ExerciseView: View {
+struct ExerciseView02: View {
     @State private var totalOrange = 3729
     @State private var buyCount: Int?
     @State private var boxLimit: Int?
@@ -23,12 +27,10 @@ struct ExerciseView: View {
             
             Text("총 몇개의 귤을 구매하시겠습니까?")
             TextField("구매할 귤 개수", value: $buyCount, format: .number)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+                .modifier(MyTextField())
             Text("한 박스에 몇개의 귤을 담으시겠습니까?")
             TextField("박스당 귤 개수", value: $boxLimit, format: .number)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+                .modifier(MyTextField())
             Button(action: buttonPressed, label: {
                 Image(systemName: "creditcard")
                 Text(buttonText)
@@ -37,7 +39,7 @@ struct ExerciseView: View {
             .padding(10)
             .buttonStyle(.bordered)
             .alert("입력이 잘못되었습니다.", isPresented: $showingAlert) {
-                Button("OK", role: .cancel) { 
+                Button("OK", role: .cancel) {
                     showingAlert = false
                     buyCount = nil
                     boxLimit = nil
@@ -63,4 +65,6 @@ struct ExerciseView: View {
     
 }
 
-PlaygroundPage.current.setLiveView(ExerciseView().padding(100))
+#Preview {
+    ExerciseView02()
+}

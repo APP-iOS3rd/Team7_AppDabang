@@ -1,9 +1,13 @@
+//
+//  ExampleView01.swift
+//  DemoProject2
+//
+//  Created by phang on 10/11/23.
+//
+
 import SwiftUI
-import PlaygroundSupport
 
-// MARK: - SwiftUI
-
-struct ExampleView: View {
+struct ExampleView01: View {
     @State private var msg = "Bonjour, Phang!"
     private let sendButtonText = "Send"
     
@@ -35,4 +39,6 @@ struct ExampleView: View {
     
 }
 
-PlaygroundPage.current.setLiveView(ExampleView().padding(100))
+#Preview {
+    ExampleView01()
+}

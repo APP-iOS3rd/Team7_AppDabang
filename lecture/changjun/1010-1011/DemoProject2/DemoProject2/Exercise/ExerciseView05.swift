@@ -1,9 +1,14 @@
+//
+//  ExerciseView05.swift
+//  DemoProject2
+//
+//  Created by phang on 10/11/23.
+//
+
 import SwiftUI
-import PlaygroundSupport
 
-// MARK: - SwiftUI Exercise 5
-
-struct ExerciseView: View {
+@available(iOS 17.0, *)
+struct ExerciseView05: View {
     @State private var score: (swift: Int?, ios: Int?, web: Int?)
     @State private var result = (total: 0, avg: 0)
     
@@ -12,16 +17,13 @@ struct ExerciseView: View {
     var body: some View {
         VStack {
             TextField("Swift 성적", value: $score.swift, format: .number)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+                .modifier(MyTextField())
                 .onChange(of: score.swift) { result = getResult() }
             TextField("iOS 성적", value: $score.ios, format: .number)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+                .modifier(MyTextField())
                 .onChange(of: score.ios) { result = getResult() }
             TextField("Web 성적", value: $score.web, format: .number)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
+                .modifier(MyTextField())
                 .onChange(of: score.web) { result = getResult() }
             
             Text("Total: \(result.total)\nAVG: \(result.avg)")
@@ -42,4 +44,7 @@ struct ExerciseView: View {
     
 }
 
-PlaygroundPage.current.setLiveView(ExerciseView().padding(100))
+@available(iOS 17.0, *)
+#Preview {
+    ExerciseView05()
+}

@@ -1,17 +1,23 @@
+//
+//  ExampleView02.swift
+//  DemoProject2
+//
+//  Created by phang on 10/11/23.
+//
+
 import SwiftUI
-import PlaygroundSupport
 
-// MARK: - SwiftUI
-
-struct ExampleView: View {
+struct ExampleView02: View {
     @State var fileOpen = true
     
     var body: some View {
         
         var str = "File Closed"
+        print(str)
         
         if fileOpen {
             str = "File Open"
+            print(str)
         }
         
         return VStack {
@@ -33,4 +39,6 @@ struct ExampleView: View {
     }
 }
 
-PlaygroundPage.current.setLiveView(ExampleView().padding(100))
+#Preview {
+    ExampleView02()
+}
