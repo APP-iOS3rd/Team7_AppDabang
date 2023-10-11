@@ -1,9 +1,13 @@
+//
+//  ExerciseView03.swift
+//  DemoProject2
+//
+//  Created by phang on 10/11/23.
+//
+
 import SwiftUI
-import PlaygroundSupport
 
-// MARK: - SwiftUI Exercise 3
-
-struct ExerciseView: View {
+struct ExerciseView03: View {
     @State private var number: Int?
     @State private var result = 0
     @State private var showingAlert = false
@@ -13,9 +17,7 @@ struct ExerciseView: View {
     var body: some View {
         VStack {
             TextField("숫자를 입력해주세요.", value: $number, format: .number)
-                .textFieldStyle(.roundedBorder)
-                .keyboardType(.numberPad)
-                .padding(10)
+                .modifier(MyTextField())
             Button(action: buttonPressed, label: {
                 Text(buttonText)
                     .foregroundColor(.gray)
@@ -40,5 +42,6 @@ struct ExerciseView: View {
     
 }
 
-PlaygroundPage.current.setLiveView(ExerciseView().padding(100))
-
+#Preview {
+    ExerciseView03()
+}
