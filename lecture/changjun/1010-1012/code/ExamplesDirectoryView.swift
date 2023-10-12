@@ -11,7 +11,8 @@ import SwiftUI
 struct ExamplesDirectoryView: View {
     private let example1010: [Example]
     private let example1011: [Example]
-    private let exerciseArr: [ExampleArray]
+    private let example1012: [Example]
+    private let exampleArr: [ExampleArray]
     
     init() {
         self.example1010 = [
@@ -21,18 +22,22 @@ struct ExamplesDirectoryView: View {
         self.example1011 = [
             Example(title: "ExampleView03")
         ]
-        self.exerciseArr = [
+        self.example1012 = [
+            Example(title: "ExampleView04")
+        ]
+        self.exampleArr = [
             ExampleArray(day: "10.10", arr: self.example1010),
-            ExampleArray(day: "10.11", arr: self.example1011)
+            ExampleArray(day: "10.11", arr: self.example1011),
+            ExampleArray(day: "10.12", arr: self.example1012)
         ]
     }
-    
+
     var body: some View {
         
         VStack {
             
             List {
-                ForEach(exerciseArr, id: \.day) { section in
+                ForEach(exampleArr, id: \.day) { section in
                     Section(
                         header: Text(section.day)
                             .font(.headline)
@@ -62,6 +67,8 @@ struct ExamplesDirectoryView: View {
                 ExampleView02()
             case "ExampleView03":
                 BasicView()
+            case "ExampleView04":
+                StackFrameView()
             default:
                 Text("Unknown View")
         }
