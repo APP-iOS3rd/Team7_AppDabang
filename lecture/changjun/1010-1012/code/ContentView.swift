@@ -29,7 +29,7 @@ struct ContentView: View {
                     .frame(height: 3)
                     .background(Color.pink)
                 
-                NavigationLink(destination: Exercise08()) {
+                NavigationLink(destination: ExercisesDirectoryView()) {
                     Label("Exercises", systemImage: "macbook")
                         .modifier(LargeLabel())
                 }

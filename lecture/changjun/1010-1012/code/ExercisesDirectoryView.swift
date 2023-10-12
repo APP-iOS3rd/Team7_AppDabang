@@ -1,5 +1,5 @@
 //
-//  Exercise08.swift
+//  ExercisesDirectoryView.swift
 //  DemoProject2
 //
 //  Created by phang on 10/11/23.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 17.0, *)
-struct Exercise08: View {
+struct ExercisesDirectoryView: View {
     private let exercise1010: [Exercise]
     private let exercise1011: [Exercise]
     private let exerciseArr: [ExerciseArray]
@@ -84,7 +84,7 @@ struct Exercise08: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    Exercise08()
+    ExercisesDirectoryView()
 }
 
 // exercise array

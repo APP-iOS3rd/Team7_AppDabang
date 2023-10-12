@@ -77,7 +77,7 @@ struct BasicView: View {
                 }
             )
         }
-        .padding(100)
+        .padding(50)
         .background(Color.gray)
     }
 
