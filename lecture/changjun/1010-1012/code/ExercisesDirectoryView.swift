@@ -11,6 +11,7 @@ import SwiftUI
 struct ExercisesDirectoryView: View {
     private let exercise1010: [Exercise]
     private let exercise1011: [Exercise]
+    private let exercise1012: [Exercise]
     private let exerciseArr: [ExerciseArray]
     
     init() {
@@ -25,9 +26,15 @@ struct ExercisesDirectoryView: View {
             Exercise(id: "ExerciseView06", title: "Time Converter"),
             Exercise(id: "ExerciseView07", title: "A Pay Calculator")
         ]
+        self.exercise1012 = [
+            Exercise(id: "ExerciseView09", title: "EVEN or ODD"),
+            Exercise(id: "ExerciseView10", title: "Two Numbers"),
+            Exercise(id: "ExerciseView11", title: "BasketBall Count")
+        ]
         self.exerciseArr = [
             ExerciseArray(day: "10.10", arr: self.exercise1010),
-            ExerciseArray(day: "10.11", arr: self.exercise1011)
+            ExerciseArray(day: "10.11", arr: self.exercise1011),
+            ExerciseArray(day: "10.12", arr: self.exercise1012)
         ]
     }
     
@@ -75,6 +82,12 @@ struct ExercisesDirectoryView: View {
                 ExerciseView06()
             case "ExerciseView07":
                 ExerciseView07()
+            case "ExerciseView09":
+                ExerciseView09()
+            case "ExerciseView10":
+                ExerciseView10()
+            case "ExerciseView11":
+                ExerciseView11()
             default:
                 Text("Unknown View")
         }
