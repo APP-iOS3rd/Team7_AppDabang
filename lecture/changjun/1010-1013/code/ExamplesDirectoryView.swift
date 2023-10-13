@@ -12,6 +12,7 @@ struct ExamplesDirectoryView: View {
     private let example1010: [Example]
     private let example1011: [Example]
     private let example1012: [Example]
+    private let example1013: [Example]
     private let exampleArr: [ExampleArray]
     
     init() {
@@ -25,10 +26,15 @@ struct ExamplesDirectoryView: View {
         self.example1012 = [
             Example(title: "ExampleView04")
         ]
+        self.example1013 = [
+            Example(title: "ExampleView05"),
+            Example(title: "ExampleView06")
+        ]
         self.exampleArr = [
             ExampleArray(day: "10.10", arr: self.example1010),
             ExampleArray(day: "10.11", arr: self.example1011),
-            ExampleArray(day: "10.12", arr: self.example1012)
+            ExampleArray(day: "10.12", arr: self.example1012),
+            ExampleArray(day: "10.13", arr: self.example1013)
         ]
     }
 
@@ -61,16 +67,20 @@ struct ExamplesDirectoryView: View {
     @ViewBuilder
     private func getView(_ str: String) -> some View {
         switch str {
-            case "ExampleView01":
-                ExampleView01()
-            case "ExampleView02":
-                ExampleView02()
-            case "ExampleView03":
-                BasicView()
-            case "ExampleView04":
-                StackFrameView()
-            default:
-                Text("Unknown View")
+        case "ExampleView01":
+            ExampleView01()
+        case "ExampleView02":
+            ExampleView02()
+        case "ExampleView03":
+            BasicView()
+        case "ExampleView04":
+            StackFrameView()
+        case "ExampleView05":
+            StateView()
+        case "ExampleView06":
+            ExampleView06()
+        default:
+            Text("Unknown View")
         }
     }
     
