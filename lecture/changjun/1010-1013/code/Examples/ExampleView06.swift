@@ -29,8 +29,9 @@ struct ExampleView06: View {
 class ExampleView06Setting: ObservableObject {
     @Published var colorIndex = 0
     @Published var degree: Double = 0
-    @Published var text = ""
+    @Published var inputString = ""
     @Published var colors: [Color] = [.black, .blue, .pink, .yellow, .mint]
+    @Published var colorNames = ["Black", "Blue", "Pink", "Yellow", "Mint"]
 }
 
 // MARK: - Text
@@ -41,13 +42,12 @@ struct Ex06TextView: View {
         VStack(spacing: 20) {
             Spacer()
             
-            Text(ex06Setting.text.isEmpty ? "BonJour!" : ex06Setting.text)
+            Text(ex06Setting.inputString.isEmpty ? "BonJour!" : ex06Setting.inputString)
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .rotationEffect(.degrees(ex06Setting.degree))
                 .animation(.easeInOut(duration: 1.5), value: ex06Setting.degree)
                 .foregroundStyle(ex06Setting.colors[ex06Setting.colorIndex])
-            
             Spacer()
             Divider()
                 .frame(height: 1)
@@ -65,7 +65,7 @@ struct Ex06TextChangeView: View {
             Slider(value: $ex06Setting.degree, in: 0...360, step: 0.1)
                 .tint(ex06Setting.colors[ex06Setting.colorIndex])
             
-            TextField("Enter Text Here", text: $ex06Setting.text)
+            TextField("Enter Text Here", text: $ex06Setting.inputString)
                 .textFieldStyle(.roundedBorder)
                 .foregroundStyle(ex06Setting.colors[ex06Setting.colorIndex])
         }
@@ -76,13 +76,11 @@ struct Ex06TextChangeView: View {
 struct Ex06PickerView: View {
     @EnvironmentObject var ex06Setting: ExampleView06Setting
     
-    let colorNames = ["Black", "Blue", "Pink", "Yellow", "Mint"]
-
     var body: some View {
         VStack {
             Picker(selection: $ex06Setting.colorIndex, label: Text("Color Pick")) {
-                ForEach (0..<colorNames.count, id: \.self) {
-                    Text(colorNames[$0])
+                ForEach (0..<ex06Setting.colorNames.count, id: \.self) {
+                    Text(ex06Setting.colorNames[$0])
                         .foregroundStyle(ex06Setting.colors[ex06Setting.colorIndex])
                 }
             }

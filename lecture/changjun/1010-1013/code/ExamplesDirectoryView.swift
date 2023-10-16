@@ -28,8 +28,7 @@ struct ExamplesDirectoryView: View {
         ]
         self.example1013 = [
             Example(title: "ExampleView05"),
-            Example(title: "ExampleView06"),
-            Example(title: "ExampleView07")
+            Example(title: "ExampleView06")
         ]
         self.exampleArr = [
             ExampleArray(day: "10.10", arr: self.example1010),
@@ -79,8 +78,6 @@ struct ExamplesDirectoryView: View {
         case "ExampleView05":
             StateView()
         case "ExampleView06":
-            EnvironmentObjectPracView()
-        case "ExampleView07":
             ExampleView06()
         default:
             Text("Unknown View")
