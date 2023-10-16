@@ -96,7 +96,7 @@ struct MyTextField: ViewModifier {
     }
 }
 
-// VStack 커스텀 컨테이너
+// MARK: - VStack 커스텀 컨테이너
 struct PhangVStack<Content: View>: View{
     @ViewBuilder let content: Content
     var body: some View {
@@ -104,6 +104,15 @@ struct PhangVStack<Content: View>: View{
           content
       }
         .padding(20)
+    }
+}
+
+// MARK: - CustomPinkButton
+struct CustomPinkButton: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .buttonStyle(.borderedProminent)
+            .tint(Color.pink)
     }
 }
 
