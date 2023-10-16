@@ -12,7 +12,6 @@ struct ExercisesDirectoryView: View {
     private let exercise1010: [Exercise]
     private let exercise1011: [Exercise]
     private let exercise1012: [Exercise]
-    private let exercise1016: [Exercise]
     private let exerciseArr: [ExerciseArray]
     
     init() {
@@ -32,16 +31,10 @@ struct ExercisesDirectoryView: View {
             Exercise(id: "ExerciseView10", title: "Two Numbers"),
             Exercise(id: "ExerciseView11", title: "BasketBall Count")
         ]
-        self.exercise1016 = [
-            Exercise(id: "ExerciseView12", title: "Image.."),
-            Exercise(id: "ExerciseView13", title: "Count Button"),
-            Exercise(id: "ExerciseView14", title: "Button..")
-        ]
         self.exerciseArr = [
             ExerciseArray(day: "10.10", arr: self.exercise1010),
             ExerciseArray(day: "10.11", arr: self.exercise1011),
-            ExerciseArray(day: "10.12", arr: self.exercise1012),
-            ExerciseArray(day: "10.16", arr: self.exercise1016)
+            ExerciseArray(day: "10.12", arr: self.exercise1012)
         ]
     }
     
@@ -95,12 +88,6 @@ struct ExercisesDirectoryView: View {
                 ExerciseView10()
             case "ExerciseView11":
                 ExerciseView11()
-            case "ExerciseView12":
-                ExerciseView12()
-            case "ExerciseView13":
-                ExerciseView13()
-            case "ExerciseView14":
-                ExerciseView14()
             default:
                 Text("Unknown View")
         }
