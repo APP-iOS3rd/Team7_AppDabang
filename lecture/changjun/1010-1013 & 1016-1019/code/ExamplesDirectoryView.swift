@@ -13,6 +13,7 @@ struct ExamplesDirectoryView: View {
     private let example1011: [Example]
     private let example1012: [Example]
     private let example1013: [Example]
+    private let example1019: [Example]
     private let exampleArr: [ExampleArray]
     
     init() {
@@ -31,11 +32,15 @@ struct ExamplesDirectoryView: View {
             Example(title: "ExampleView06"),
             Example(title: "ExampleView07")
         ]
+        self.example1019 = [
+            Example(title: "ExampleView08")
+        ]
         self.exampleArr = [
             ExampleArray(day: "10.10", arr: self.example1010),
             ExampleArray(day: "10.11", arr: self.example1011),
             ExampleArray(day: "10.12", arr: self.example1012),
-            ExampleArray(day: "10.13", arr: self.example1013)
+            ExampleArray(day: "10.13", arr: self.example1013),
+            ExampleArray(day: "10.19", arr: self.example1019)
         ]
     }
 
@@ -82,6 +87,8 @@ struct ExamplesDirectoryView: View {
             EnvironmentObjectPracView()
         case "ExampleView07":
             ExampleView06()
+        case "ExampleView08":
+            ConcurrencyView()
         default:
             Text("Unknown View")
         }
