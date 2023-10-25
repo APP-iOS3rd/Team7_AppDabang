@@ -80,7 +80,8 @@ print(numbers.map(chageIntToString)) // ["1", "2", "3", "4", "5"]
 // MARK: - Map, Filter, Reduce 예제 01
 
 func sumOfSquaresOfOdds(array: [Int]) -> Int {
-    return array.filter{ $0 % 2 == 1 }.reduce(into: Int()){ $0 += ($1 * $1) }
+    return array.filter { $0 % 2 == 1 }
+                .reduce(into: Int()) { $0 += ($1 * $1) }
 }
 
 print(sumOfSquaresOfOdds(array: [1, 2, 3, 4, 5, 6, 7, 8, 9])) // 165
@@ -90,7 +91,10 @@ print(sumOfSquaresOfOdds(array: [1, 2, 3, 4, 5, 6, 7, 8, 9])) // 165
 
 func reverseWithoutVowels(string: String) -> String {
     let vowels = "aeiouAEIOU"
-    return String(string.filter{ !vowels.contains(String($0)) }.uppercased().reversed())
+    return String(string.filter { !vowels.contains($0) }
+                        .uppercased()
+                        .reversed()
+            )
 }
 
 print(reverseWithoutVowels(string: "Hello World")) // DLRW LLH
@@ -100,8 +104,8 @@ print(reverseWithoutVowels(string: "Hello World")) // DLRW LLH
 
 func sumOfKeysWithEvenValues(dictionary: [String: Int]) -> Int {
     return dictionary.reduce(into: Int()){
-        if $1.value % 2 == 0, let uni = UnicodeScalar($1.key) {
-            $0 += Int(uni.value)
+        if $1.value % 2 == 0, let ascii = Character($1.key).asciiValue {
+            $0 += Int(ascii)
         }
     }
 }
@@ -115,16 +119,16 @@ func differenceBetweenMaxAndMin(array: [Int]) -> Int {
 //    return max - min
             
     guard !array.isEmpty else { return 0 }
-    return array.reduce(Int.min){ max($0, $1) } - array.reduce(Int.max){ min($0, $1) }
+    return array.reduce(Int.min, max) - array.reduce(Int.max, min)
 }
 
-print(differenceBetweenMaxAndMin(array: [10, 20, 30, 40, 50]))
+print(differenceBetweenMaxAndMin(array: [10, 20, 30, 40, 50])) // 40
 
 
 // MARK: - Map, Filter, Reduce 예제 05
 
 func countElements(array: [String]) -> [String: Int] {
-    return array.reduce(into: [String: Int]()){ $0[$1, default: 0] += 1 }
+    return array.reduce(into: [String: Int]()) { $0[$1, default: 0] += 1 }
 }
 
 print(countElements(array: ["a", "b", "a", "c", "b", "d"])) // ["a": 2, "d": 1, "b": 2, "c": 1]
@@ -134,17 +138,17 @@ print(countElements(array: ["a", "b", "a", "c", "b", "d"])) // ["a": 2, "d": 1, 
 
 func mostFrequentElement(array: [String]) -> String {
     return String( array
-        .reduce(into: [String: Int]()){ $0[$1, default: 0] += 1 }
+        .reduce(into: [String: Int]()) { $0[$1, default: 0] += 1 }
         .max(by: { $0.value < $1.value})!.key )
 }
 
-print(mostFrequentElement(array: ["a", "b", "a", "c", "b", "d"])) // d or a
+print(mostFrequentElement(array: ["a", "b", "a", "c", "b", "d"])) // b or a
 
 
 // MARK: - Map, Filter, Reduce 예제 07
 
 func addStars(array: [String]) -> [String] {
-    return array.map{ "*\($0)*" }
+    return array.map { "*\($0)*" }
 }
 
 print(addStars(array: ["a", "b", "c"])) // ["*a*", "*b*", "*c*"]
@@ -153,7 +157,8 @@ print(addStars(array: ["a", "b", "c"])) // ["*a*", "*b*", "*c*"]
 // MARK: - Map, Filter, Reduce 예제 08
 
 func sumOfMultiplesOfThree(array: [Int]) -> Int {
-    return array.filter{ $0 % 3 == 0 }.reduce(0, + )
+    return array.filter { $0 % 3 == 0 }
+                .reduce(0, + )
 }
 
 print(sumOfMultiplesOfThree(array: [1, 2, 3, 4, 5, 6, 7, 8, 9])) // 18
@@ -162,7 +167,7 @@ print(sumOfMultiplesOfThree(array: [1, 2, 3, 4, 5, 6, 7, 8, 9])) // 18
 // MARK: - Map, Filter, Reduce 예제 09
 
 func repeatTwice(array: [String]) -> [String] {
-    return array.reduce(into: [String]()){ $0 += [$1, $1] }
+    return array.reduce(into: [String]()) { $0 += [$1, $1] }
 }
 
 print(repeatTwice(array: ["a", "b", "c"])) // ["a", "a", "b", "b", "c", "c"]
@@ -175,3 +180,4 @@ func lengthsOfElements(array: [String]) -> [Int] {
 }
 
 print(lengthsOfElements(array: ["apple", "banana", "cherry"])) // [5, 6, 6]
+
