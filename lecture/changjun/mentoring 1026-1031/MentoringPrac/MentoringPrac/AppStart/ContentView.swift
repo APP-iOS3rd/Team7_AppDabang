@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class LoginData: ObservableObject {
+class LoginUserData: ObservableObject {
     @Published var isLogin = false
     @Published var userName: String?
 }
@@ -15,16 +15,16 @@ class LoginData: ObservableObject {
 struct ContentView: View {
     @State var isLoading = true
     
-    @StateObject var loginData: LoginData = LoginData()
+    @StateObject var loginUserData: LoginUserData = LoginUserData()
     
     var body: some View {
         VStack {
             if isLoading {
                 LoadingView()
-            } else if !loginData.isLogin {
-                LoginView().environmentObject(loginData)
+            } else if !loginUserData.isLogin {
+                LoginView().environmentObject(loginUserData)
             } else {
-                MainView().environmentObject(loginData)
+                MainView().environmentObject(loginUserData)
             }
         }.onAppear {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
