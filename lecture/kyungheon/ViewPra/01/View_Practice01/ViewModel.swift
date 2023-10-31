@@ -51,7 +51,7 @@ class LoginViewModel: ObservableObject {
         }
         
         func isHaveSpecial(_ leng: Int) -> Bool {
-            user.userPassword.filter { "~!@#$%^&*".contains($0)}.count >= leng
+            user.userPassword.filter { "!@#$%^&*()_+=-".contains($0)}.count >= leng
         }
     }
     
@@ -72,7 +72,7 @@ class LoginViewModel: ObservableObject {
     
     // MARK: - 넥스트 버튼 관련
     func nextBtnOnOff() -> Bool {
-        return emailState == 2 && processPassword[1]
+        return emailState == 2 && processPassword[1] ? true : false
     }
     
     func isPossibleNext() -> Bool {

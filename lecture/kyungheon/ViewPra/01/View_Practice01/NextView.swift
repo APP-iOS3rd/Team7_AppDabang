@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NextView: View {
     var body: some View {
-        Text("Hello!!!!!!!!")
+        Text("끝")
     }
 }
 

@@ -11,8 +11,9 @@ import SwiftUI
 struct View_Practice01App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(LoginViewModel())
+            dummy()
+//            ContentView()
+//                .environmentObject(LoginViewModel())
         }
     }
 }
