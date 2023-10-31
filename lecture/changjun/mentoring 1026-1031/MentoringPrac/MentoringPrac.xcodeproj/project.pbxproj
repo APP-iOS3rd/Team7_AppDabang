@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093C1C812AF13D900039E705 /* LoginGreeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093C1C802AF13D900039E705 /* LoginGreeting.swift */; };
+		093C1C832AF13DA80039E705 /* EmailAndPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093C1C822AF13DA80039E705 /* EmailAndPasswordView.swift */; };
+		093C1C852AF13DBA0039E705 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093C1C842AF13DBA0039E705 /* LoginButton.swift */; };
 		0967E7D02AECFECB00E7C415 /* MentoringPracApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E7CF2AECFECB00E7C415 /* MentoringPracApp.swift */; };
 		0967E7D22AECFECB00E7C415 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E7D12AECFECB00E7C415 /* ContentView.swift */; };
 		0967E7D42AECFECC00E7C415 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0967E7D32AECFECC00E7C415 /* Assets.xcassets */; };
@@ -22,7 +25,7 @@
 		0967E8042AED0B9500E7C415 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E8032AED0B9500E7C415 /* LoadingView.swift */; };
 		0967E8062AEE2E2B00E7C415 /* Customs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E8052AEE2E2B00E7C415 /* Customs.swift */; };
 		0967E8082AEE2EE800E7C415 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E8072AEE2EE800E7C415 /* Texts.swift */; };
-		0967E80D2AEE3DF800E7C415 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E80C2AEE3DF800E7C415 /* BackgroundView.swift */; };
+		0967E80D2AEE3DF800E7C415 /* LoginBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E80C2AEE3DF800E7C415 /* LoginBackground.swift */; };
 		0967E8132AEE6AB600E7C415 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E8122AEE6AB600E7C415 /* MainView.swift */; };
 		0967E8152AEE6B3100E7C415 /* Error +.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0967E8142AEE6B3100E7C415 /* Error +.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		093C1C802AF13D900039E705 /* LoginGreeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginGreeting.swift; sourceTree = "<group>"; };
+		093C1C822AF13DA80039E705 /* EmailAndPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailAndPasswordView.swift; sourceTree = "<group>"; };
+		093C1C842AF13DBA0039E705 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		0967E7CC2AECFECB00E7C415 /* MentoringPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentoringPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0967E7CF2AECFECB00E7C415 /* MentoringPracApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoringPracApp.swift; sourceTree = "<group>"; };
 		0967E7D12AECFECB00E7C415 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,7 +69,7 @@
 		0967E8032AED0B9500E7C415 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		0967E8052AEE2E2B00E7C415 /* Customs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customs.swift; sourceTree = "<group>"; };
 		0967E8072AEE2EE800E7C415 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
-		0967E80C2AEE3DF800E7C415 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		0967E80C2AEE3DF800E7C415 /* LoginBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBackground.swift; sourceTree = "<group>"; };
 		0967E8122AEE6AB600E7C415 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0967E8142AEE6B3100E7C415 /* Error +.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error +.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,7 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				0967E7F92AECFEF400E7C415 /* LoginView.swift */,
-				0967E80C2AEE3DF800E7C415 /* BackgroundView.swift */,
+				0967E80C2AEE3DF800E7C415 /* LoginBackground.swift */,
+				093C1C802AF13D900039E705 /* LoginGreeting.swift */,
+				093C1C822AF13DA80039E705 /* EmailAndPasswordView.swift */,
+				093C1C842AF13DBA0039E705 /* LoginButton.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -315,13 +324,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0967E7FA2AECFEF400E7C415 /* LoginView.swift in Sources */,
+				093C1C852AF13DBA0039E705 /* LoginButton.swift in Sources */,
 				0967E8132AEE6AB600E7C415 /* MainView.swift in Sources */,
 				0967E8002AECFFE100E7C415 /* AppDabangUserData.swift in Sources */,
-				0967E80D2AEE3DF800E7C415 /* BackgroundView.swift in Sources */,
+				0967E80D2AEE3DF800E7C415 /* LoginBackground.swift in Sources */,
 				0967E7FE2AECFF0D00E7C415 /* Regex.swift in Sources */,
+				093C1C832AF13DA80039E705 /* EmailAndPasswordView.swift in Sources */,
 				0967E8022AED009A00E7C415 /* AppDabangUserData +.swift in Sources */,
 				0967E7D22AECFECB00E7C415 /* ContentView.swift in Sources */,
 				0967E8062AEE2E2B00E7C415 /* Customs.swift in Sources */,
+				093C1C812AF13D900039E705 /* LoginGreeting.swift in Sources */,
 				0967E8042AED0B9500E7C415 /* LoadingView.swift in Sources */,
 				0967E7FC2AECFF0200E7C415 /* Color +.swift in Sources */,
 				0967E8082AEE2EE800E7C415 /* Texts.swift in Sources */,

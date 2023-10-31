@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: - Login Background
 
-struct BackgroundView: View {
+struct LoginBackground: View {
     
     let geo: GeometryProxy
     let backgroungRectHeight = 0.95
@@ -27,7 +27,7 @@ struct BackgroundView: View {
     GeometryReader { geo in
         VStack {
             Spacer()
-            BackgroundView(geo: geo)
+            LoginBackground(geo: geo)
         }
         .ignoresSafeArea()
     }

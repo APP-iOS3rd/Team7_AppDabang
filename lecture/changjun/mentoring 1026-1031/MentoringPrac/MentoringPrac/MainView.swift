@@ -9,11 +9,11 @@ import SwiftUI
 
 struct MainView: View {
     
-    @EnvironmentObject var loginData: LoginData
+    @EnvironmentObject var loginUserData: LoginUserData
     
     var body: some View {
         VStack {
-            Text("Hi, \(loginData.userName ?? "????") - !")
+            Text("Hi, \(loginUserData.userName ?? "????") - !")
                 .font(.largeTitle)
                 .fontWeight(.bold)
         }
