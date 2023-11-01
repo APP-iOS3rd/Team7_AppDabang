@@ -97,8 +97,10 @@ struct ContentView: View {
                             Text("Helper text")
                                 .foregroundColor(checkButton == true ? .black : .red)
                         }else{
-                            Text(checkEmail(str: email) == true ? "Helper text" : "이메일을 올바르게 입력해주세요")
-                                .foregroundColor(checkButton == true ? .black : .red)
+                            Text(validEmail == false ? "Helper text" : "이메일을 올바르게 입력해 주세요")
+                                .foregroundColor(validEmail == false ? .black : .red)
+//                            Text(checkEmail(str: email) == true ? "Helper text" : "이메일을 올바르게 입력해주세요")
+//                                .foregroundColor(checkButton == true ? .black : .red)
                         }
                             Spacer()
                             Text("")
@@ -219,7 +221,12 @@ struct ContentView: View {
         .onSubmit {
             switch focusedField {
             case .email:
-                focusedField = .password
+                if checkEmail(str: email) == true{
+                    validEmail = false
+                    focusedField = .password
+                }else{
+                    validEmail = true
+                }
             case .password:
                 focusedField = nil
             default:
