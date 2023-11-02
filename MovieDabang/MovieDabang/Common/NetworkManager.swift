@@ -76,31 +76,4 @@ public class NetworkManager {
             task.resume()
         }
     }
-    
-    func fetchMovieDetail(id: Int, completionHandler: @escaping (Movie?) -> Void) {
-        if let url = URL(string: "\(baseURL)\(id)") {
-            let task = session.dataTask(with: url) { (data, response, error) in
-                if let err = error {
-                    print("NowPlayingMovie - An Error Occured \(err.localizedDescription)")
-                    completionHandler(nil)
-                    return
-                }
-                guard let mime = response?.mimeType, mime == "application/json" else {
-                    print("NowPlayingMovie - Wrong MIME type!")
-                    completionHandler(nil)
-                    return
-                }
-                if let jsonData = data {
-                    do {
-                        let decoder = JSONDecoder()
-                        let decodedModel = try decoder.decode(Movie.self, from: jsonData)
-                        completionHandler(decodedModel)
-                    } catch {
-                        print("NowPlayingMovie - JSON error: \(error.localizedDescription)")
-                    }
-                }
-            }
-            task.resume()
-        }
-    }
 }

@@ -38,8 +38,13 @@ struct MovieDetailView: View {
                 Text(movie.title)
                     .font(.headline)
                 
-                Text("⭐️ \(String(format: "%.2f", movie.voteAverage))")
-                    .font(.body)
+                HStack {
+                    Image(systemName: "star.fill")
+                        .foregroundStyle(Color.yellow)
+                        .frame(width: 20)
+                    Text("\(String(format: "%.2f", movie.voteAverage))")
+                        .font(.body)
+                }
                 
                 Text(movie.releaseDate)
                     .font(.body)
