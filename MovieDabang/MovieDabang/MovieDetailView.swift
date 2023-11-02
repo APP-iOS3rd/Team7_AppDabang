@@ -7,20 +7,22 @@
 
 import SwiftUI
 
+struct Movie: Codable, Identifiable {
+    let id: Int
+    let title: String
+    let overview: String
+    let posterPath: String
+    let releaseDate: String
+    let voteAverage: Double
+}
+
 struct MovieDetailView: View {
-    
-    struct Movie: Codable, Identifiable {
-        let id: Int
-        let title: String
-        let overview: String
-        let posterPath: String
-        let releaseDate: String
-        let voteAverage: Double
-    }
-    
     @State var like : Bool = false
     @Binding var movie : Movie
+//    @State private var movie : Movie
+
 //    let Movie = ["name" : "과속스캔들", "date" : "2007.11.14", "people" : "264K", "imageName" : "testImage"]
+    
     
     var body: some View {
         Form {
@@ -66,6 +68,6 @@ struct MovieDetailView: View {
     }
 }
 
-#Preview {
-    MovieDetailView()
-}
+//#Preview {
+//    MovieDetailView()
+//}

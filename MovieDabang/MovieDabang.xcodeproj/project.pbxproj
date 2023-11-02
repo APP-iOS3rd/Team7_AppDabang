@@ -15,6 +15,7 @@
 		09E7DC9B2AF37232004DE546 /* MovieDabangUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7DC9A2AF37232004DE546 /* MovieDabangUITests.swift */; };
 		09E7DC9D2AF37232004DE546 /* MovieDabangUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E7DC9C2AF37232004DE546 /* MovieDabangUITestsLaunchTests.swift */; };
 		61BABE562AF38C7200ADBD59 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BABE552AF38C7200ADBD59 /* MovieDetailView.swift */; };
+		61BABE5C2AF3EBC600ADBD59 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BABE5B2AF3EBC600ADBD59 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		09E7DC9A2AF37232004DE546 /* MovieDabangUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDabangUITests.swift; sourceTree = "<group>"; };
 		09E7DC9C2AF37232004DE546 /* MovieDabangUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDabangUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		61BABE552AF38C7200ADBD59 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		61BABE5B2AF3EBC600ADBD59 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				09E7DC7F2AF3722E004DE546 /* MovieDabangApp.swift */,
 				09E7DC812AF3722E004DE546 /* ContentView.swift */,
 				61BABE552AF38C7200ADBD59 /* MovieDetailView.swift */,
+				61BABE5B2AF3EBC600ADBD59 /* SwiftUIView.swift */,
 				09E7DC832AF37232004DE546 /* Assets.xcassets */,
 				09E7DC852AF37232004DE546 /* Preview Content */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				61BABE562AF38C7200ADBD59 /* MovieDetailView.swift in Sources */,
 				09E7DC822AF3722E004DE546 /* ContentView.swift in Sources */,
+				61BABE5C2AF3EBC600ADBD59 /* SwiftUIView.swift in Sources */,
 				09E7DC802AF3722E004DE546 /* MovieDabangApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
