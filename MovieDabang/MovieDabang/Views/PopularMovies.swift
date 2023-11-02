@@ -23,7 +23,8 @@ struct PopularMovies: View {
                                 .lineLimit(2)
                             Spacer()
                             Group{
-                                Text("⭐️")
+                                Image(systemName: "star.fill")
+                                    .foregroundStyle(Color.yellow)
                                     .frame(width: 20)
                                 Text(voteAverage)
                                     .frame(width: 40)
