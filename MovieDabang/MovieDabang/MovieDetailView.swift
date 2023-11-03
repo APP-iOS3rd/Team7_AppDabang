@@ -55,7 +55,7 @@ struct MovieDetailView: View {
                         .foregroundStyle(like ? .red : .gray)
                         .symbolEffect(.bounce, value: like)
                 }
-                .padding()
+                .padding(15)
             })
         }
     }
