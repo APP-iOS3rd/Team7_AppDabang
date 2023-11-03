@@ -1,0 +1,39 @@
+{
+    "songs": [
+        {
+            "title": "롤린 (Rollin)",
+            "artist": "브레이브걸스",
+            "play": 156
+        },
+        {
+            "title": "Celebrity",
+            "artist": "아이유",
+            "play": 141
+        },
+        {
+            "title": "On The Ground",
+            "artist": "로제 (ROSÉ)",
+            "play": 35
+        },
+        {
+            "title": "LOVE DAY (2021)",
+            "artist": "양요섭, 정은지",
+            "play": 94
+        },
+        {
+            "title": "밤하늘의 별을(2020)",
+            "artist": "경서",
+            "play": 88
+        },
+        {
+            "title": "Gone",
+            "artist": "로제 (ROSÉ)",
+            "play": 61
+        },
+        {
+            "title": "Dynamite",
+            "artist": "방탄소년단",
+            "play": 111
+        }
+    ]
+}
