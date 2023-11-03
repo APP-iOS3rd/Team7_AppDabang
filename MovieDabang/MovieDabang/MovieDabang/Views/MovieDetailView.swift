@@ -23,12 +23,14 @@ struct MovieDetailView: View {
                         switch phase {
                         case .empty:
                             ProgressView()
+                                .frame(maxWidth: .infinity, alignment: .center)
                         case .success(let image):
                             image.resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .clipShape(.rect(cornerRadius: 12))
                         case .failure:
                             Image(systemName: "photo")
+                                .frame(maxWidth: .infinity, alignment: .center)
                         @unknown default:
                             EmptyView()
                         }
@@ -85,7 +87,7 @@ struct MovieDetailView: View {
     }
     
     private func deleteMovie(_ movie: MovieProtocol) {
-        // 현재 하트 눌러서 데이터 삭제 X
+        // 현재 하트 눌러서 데이터 삭제 안됨..
         if let dataItem = movie as? DataItem {
             context.delete(dataItem)
         }

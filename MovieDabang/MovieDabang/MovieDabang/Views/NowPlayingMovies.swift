@@ -15,7 +15,7 @@ struct NowPlayingMovies: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach (movieViewModel.nowPlayingMovie) { movie in
+                ForEach (movieViewModel.nowPlayingMovies) { movie in
                     let voteAverage = String(format: "%.2f", movie.voteAverage)
                     NavigationLink(destination: MovieDetailView(movie: movie)) {
                         HStack {
