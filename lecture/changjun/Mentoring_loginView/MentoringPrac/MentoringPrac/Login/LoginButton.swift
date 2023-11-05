@@ -13,16 +13,15 @@ struct LoginButton: View {
     @EnvironmentObject var loginUserData: LoginUserData
     @EnvironmentObject var loginData: LoginData
     
-    private var isLoginButton: Bool { showLoginButton() }
+    private var isLoginButton: Bool { 
+        showLoginButton()
+    }
     
     var body: some View {
         HStack {
             Button(action: {
                 (loginUserData.isLogin, loginData.alertMessage) = login()
-                if loginUserData.isLogin {
-                    // Login Success -> Next View
-                    print("LOGIN !!")
-                } else {
+                if !loginUserData.isLogin {
                     loginData.isShowAlert = true
                 }
             }, label: {
@@ -33,7 +32,9 @@ struct LoginButton: View {
                     .frame(maxWidth: .infinity)
             })
             .disabled(!isLoginButton)
-            .alert(loginData.alertMessage, isPresented: $loginData.isShowAlert, actions: {
+            .alert(loginData.alertMessage,
+                   isPresented: $loginData.isShowAlert,
+                   actions: {
                 Button("OK", role: .cancel) {
                     eraseWrongData()
                 }
@@ -44,11 +45,11 @@ struct LoginButton: View {
         .cornerRadius(10)
     }
     
-    func showLoginButton() -> Bool {
+    private func showLoginButton() -> Bool {
         loginData.isValidEmail && loginData.isValidPassword
     }
     
-    func login() -> (Bool, String) {
+    private func login() -> (Bool, String) {
         do {
             try confirmSubscriptionAndCorrectPassword()
         } catch LoginError.wrongEmail {
@@ -61,7 +62,7 @@ struct LoginButton: View {
         return (true, "")
     }
     
-    func confirmSubscriptionAndCorrectPassword() throws {
+    private func confirmSubscriptionAndCorrectPassword() throws {
         for user in AppDabangUsers().users {
             if loginData.email == user.email {
                 if loginData.password == user.password {
@@ -75,14 +76,10 @@ struct LoginButton: View {
         throw LoginError.wrongEmail
     }
     
-    func eraseWrongData() {
+    private func eraseWrongData() {
         loginData.password = ""
         loginData.progressColorData = [.mtGray, .mtGray, .mtGray, .mtGray]
-
-        switch loginData.alertMessage {
-        case LoginError.wrongPassword.msg:
-            break
-        default:
+        if loginData.alertMessage != LoginError.wrongPassword.msg {
             loginData.email = ""
         }
     }

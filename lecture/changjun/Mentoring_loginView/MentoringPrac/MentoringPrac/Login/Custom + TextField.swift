@@ -1,5 +1,5 @@
 //
-//  Customs.swift
+//  Custom + TextField.swift
 //  MentoringPrac
 //
 //  Created by phang on 10/29/23.
@@ -10,8 +10,7 @@ import SwiftUI
 // MARK: - 커스텀 TextField
 
 struct MentoringTextField: ViewModifier {
-    
-    var isFocused: Bool
+    var focused: Bool
     
     func body(content: Content) -> some View {
         content
@@ -23,7 +22,7 @@ struct MentoringTextField: ViewModifier {
             .overlay(
                 RoundedRectangle(cornerRadius: 12)
                     .inset(by: 0.5)
-                    .stroke(isFocused ? Color.black : Color.mtGray, lineWidth: 1)
+                    .stroke(focused ? Color.mtMainText : Color.mtGray , lineWidth: 1)
             )
     }
 }

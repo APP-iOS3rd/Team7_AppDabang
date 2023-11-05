@@ -12,23 +12,20 @@ import SwiftUI
 struct LoadingView: View {
     var body: some View {
         VStack(spacing: 20) {
-            
             Spacer()
-            
             Text("☕️")
                 .font(.system(size: 150))
             Text("App Dabang")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            
             Spacer()
-            
             Text("🦁 LikeLion AppSchool iOS 3rd")
                 .foregroundStyle(Color.mtGray)
                 .font(.footnote)
         }
     }
 }
+
 #Preview {
     LoadingView()
 }

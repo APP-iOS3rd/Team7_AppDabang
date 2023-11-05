@@ -7,8 +7,9 @@
 
 import SwiftUI
 
+// MARK: - main 뷰
+
 struct MainView: View {
-    
     @EnvironmentObject var loginUserData: LoginUserData
     
     var body: some View {
@@ -21,5 +22,5 @@ struct MainView: View {
 }
 
 #Preview {
-    MainView().environmentObject(LoginData())
+    MainView().environmentObject(LoginUserData())
 }
