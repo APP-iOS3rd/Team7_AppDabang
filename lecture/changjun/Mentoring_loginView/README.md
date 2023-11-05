@@ -1,11 +1,11 @@
 # 멘토링 과제 (10/26 ~ 10/31)
 - 로그인 뷰 만들기 (뷰 + 제약 사항 지정)
-| <img src="README.assets/figma.png" alt="figma" style="zoom:25%;" /> |
+<img src="README.assets/figma.png" alt="figma" style="zoom:25%;" />
 
 ## Gif
-| <img src="README.assets/login.gif" alt="login" style="zoom:25%;" /> |
+<img src="README.assets/login.gif" alt="login" style="zoom:25%;" /> 
 
-### -
+## 
 **10 / 29 - 뷰 완성 + 로직 완성**
 
 
