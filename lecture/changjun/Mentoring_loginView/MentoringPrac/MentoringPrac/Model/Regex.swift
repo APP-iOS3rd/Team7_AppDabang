@@ -10,10 +10,8 @@ import Foundation
 // MARK: - email, password REGEX
 
 enum Constants {
-    
     // email
     static let emailRegex = /[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,64}/
-    
     // 8 자 이상
     static let badPasswordRegex = /.{8,}/
     // 8 자 이상 & 숫자 1개 이상

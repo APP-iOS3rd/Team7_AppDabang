@@ -12,8 +12,7 @@ import Foundation
 enum LoginError: Error {
     case wrongEmail
     case wrongPassword
-    
-    
+        
     var msg: String {
         switch self {
         case .wrongEmail:
