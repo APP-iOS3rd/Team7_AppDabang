@@ -1,5 +1,9 @@
 
-## 결과 
+## 결과
+
+<details>
+<summary>history</summary>
+
 ![이메일 입력_에러](https://github.com/APP-iOS3rd/Team7_AppDabang/assets/83914919/150085b4-65e5-439b-bd31-4edf83275eee)
 <br/>
 
@@ -7,6 +11,12 @@
 <br/>
 
 ![비밀번호_입력](https://github.com/APP-iOS3rd/Team7_AppDabang/assets/83914919/469cd841-3a1c-4771-8548-1146c712b02e)
+<br/>
+
+</details>
+
+
+![뉴스 검색](https://github.com/APP-iOS3rd/Team7_AppDabang/assets/83914919/a9a0f2a2-f7f0-4e42-8582-cbcf59136e11)
 <br/>
 
 ## 참고
@@ -30,3 +40,8 @@
 
 [키보드 관련](https://ios-development.tistory.com/1068)
 <br/>
+
+[api 관련 1](https://rldd.tistory.com/149)
+<br/>
+
+[api 관련 2](https://velog.io/@jphong1005/iOS-SwiftUI-Papago-API-with.-HTTP-Protocol)
