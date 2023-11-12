@@ -36,7 +36,7 @@ struct Login: View {
                     .environmentObject(viewModel)
                 
                 NavigationLink(
-                    destination: Text("Hello, World!"),
+                    destination: Seach(),
                     isActive: $isComplete,
                     label: {
                         EmptyView()
