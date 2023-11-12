@@ -8,6 +8,7 @@
 import SwiftUI
 import Foundation
 
+// MARK: - LoginViewModel
 class LoginViewModel: ObservableObject {
     // 입력 관련
     @Published var user: User = User()

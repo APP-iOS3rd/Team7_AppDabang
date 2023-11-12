@@ -10,6 +10,7 @@ import Foundation
 enum Field {
     case email
     case password
+    case search
 }
 
 enum EmailState {
