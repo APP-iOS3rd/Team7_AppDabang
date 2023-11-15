@@ -9,7 +9,6 @@ import SwiftUI
 
 struct TodoList: Hashable, Identifiable {
     var id: UUID = UUID()
-//    var id: String
     var title: String
     var content: String
 }
@@ -34,24 +33,11 @@ class TodoListStore: ObservableObject {
 
 
 struct todoListVIew: View {
-
-//    @ObservedObject var todayListStore: TodoListStore = TodoListStore()
-    
-//    @Binding var todayMyList: [TodoList]
     
     @StateObject var todayListStore = TodoListStore()
     @State private var stackPath = NavigationPath()
     @State var title: String = ""
     @State var content: String = ""
-    
-//    @State var todayList: [TodoList] = [
-//        TodoList(title: "오늘의 할일 1", content: "오늘 해야할 일을 입력"),
-//        TodoList(title: "오늘의 할일 1", content: "오늘 해야할 일을 입력")
-//    ]
-//    @State var todayList = [
-//        TodoList(title: "오늘의 할일 1", content: "오늘 해야할 일을 입력"),
-//        TodoList(title: "오늘의 할일 1", content: "오늘 해야할 일을 입력")
-//    ]
     
     var body: some View {
         Text("\(dateFormatter())")
@@ -60,16 +46,12 @@ struct todoListVIew: View {
             .font(.largeTitle)
         NavigationStack(path: $stackPath){
             List{
-                ForEach(todayListStore.todayList, id: \.self){ item in
-                    NavigationLink(value: item) {
-//                        ListCell(list: todayListStore.todayList[0])
+                ForEach(todayListStore.todayList){ item in
                         VStack(alignment: .leading){
                             Text(item.title).font(.title2)
                             Text(item.content).foregroundStyle(.gray)
                         }
-                    }
                     .listRowSeparatorTint(.black)
-//                    .listRowBackground(Color.red)
                 }
                 .onDelete { item in
                     todayListStore.todayList.remove(atOffsets: item)
@@ -77,18 +59,10 @@ struct todoListVIew: View {
                 .onMove { from , to in
                     todayListStore.todayList.move(fromOffsets: from, toOffset: to)
                 }
-//                .toolbar {
-//                    EditButton()
-//                }
             }
             .navigationDestination(for: Int.self) { i in todoDetailView(selectedList: todayListStore.todayList[i])
             }
-            .listStyle(.automatic)
-//            .navigationBarTitle(dateFormatter())
-//            .navigationBarItems(trailing: EditButton())
-//            Button(action: {}, label: {
-//                Text("일정추가")
-//            })
+            .listStyle(.inset)
             
             NavigationLink(destination: AddTodoView(todayListStore: self.todayListStore), label: {
                 VStack{

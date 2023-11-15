@@ -31,8 +31,6 @@ struct WeatherView: View {
     var weatherDescription: String {network.weather.weather.first?.description ?? ""}
     
     
-//    var temp: String { String(format: "%.1f", (network.weather.main.temp - 273.15)) }
-    
     //온도
     var temp: String { String(format: "%.1f", (network.weather.main.temp - 273.15)) }
     var tempMin: String { String(format: "%.1f", (network.weather.main.tempMin - 273.15)) }
@@ -57,16 +55,6 @@ struct WeatherView: View {
             
             TabView(selection: $selection) {
                 VStack{
-                    //                Text("\(country)")
-                    //                Text("서울특별시")
-                    //                    .font(.headline)
-                    //
-                    //                HStack{
-                    //                    Text("\(coord1)")
-                    //                    Text("\(coord2)")
-                    //                }
-                    //                .font(.subheadline)
-                    
                     Spacer()
                     
                     VStack{
@@ -79,7 +67,6 @@ struct WeatherView: View {
                                 .font(.largeTitle)
                         }
                         .padding()
-                        //                .foregroundColor(SelectColor())
                         
                         VStack{
                             Text("\(temp) ℃")
@@ -97,15 +84,12 @@ struct WeatherView: View {
                     
                     HStack{
                         Spacer()
-                        //                    Text("구름양")
                         Image(systemName: "cloud")
                         Text("\(clouds)")
                         Spacer()
-                        //                    Text("풍속")
                         Image(systemName: "wind")
                         Text("\(wind)m/s")
                         Spacer()
-                        //                    Text("습도")
                         Image(systemName: "humidity")
                         Text("\(humidity)")
                         Spacer()
@@ -120,7 +104,6 @@ struct WeatherView: View {
                     .tag(2)
             }
             .tabViewStyle(PageTabViewStyle())
-            //        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
             
             Text("")
                 .frame(width: 350, height: 2)
@@ -131,7 +114,6 @@ struct WeatherView: View {
     }
     
     func SelectIcon () -> String{
-//        var icons: String = ""
         
         if icon == "01d" || icon == "01n" {
             return "sun.max.fill"
@@ -157,7 +139,6 @@ struct WeatherView: View {
     }
     
     func SelectColor () -> Color{
-//        var icons: String = ""
         
         if icon == "01d" || icon == "01n" {
             return .red
@@ -181,23 +162,6 @@ struct WeatherView: View {
             return .black
         }
     }
-    
-    
-//    mutating func dateFormatter(){
-//        let nowDate = Date()
-//        let dateFormatter = DateFormatter()
-//        dateFormatter.dateFormat = "hh:mm"
-//        let str = dateFormatter.string(from: nowDate)
-//        
-//        if str >= "06:00" && str <= "18:00" {
-//            return bgColor = .mint
-//            
-//        } else if str >= "18:00" && str <= "06:00" {
-//            return bgColor = .indigo
-//        } else {
-//            return bgColor = .red
-//        }
-//    }
     
 }
 
