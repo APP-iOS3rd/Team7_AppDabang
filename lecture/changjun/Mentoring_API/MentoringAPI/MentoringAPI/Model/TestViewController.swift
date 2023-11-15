@@ -50,7 +50,7 @@ class TestViewController: UIViewController {
             let data = self.jsonSample.data(using: .utf8),
             let response = try? JSONDecoder().decode(CelebrityResponse.self, from: data)
         else { return }
-        print(response.faceCount)
+        print(response.info.faceCount)
         print(response.faces[0])
     }
 }
