@@ -26,7 +26,8 @@ class NetworkManager {
     }
     
     // request
-    func request<T: Decodable>(fromURL urlString: String, httpMethod: HttpMethod = .post) async throws -> T {
+    func request<T: Decodable>(fromURL urlString: String,
+                               httpMethod: HttpMethod = .post) async throws -> T {
         // url 검증
         guard let url = URL(string: urlString) else {
             throw ManagerErrors.invalidURL

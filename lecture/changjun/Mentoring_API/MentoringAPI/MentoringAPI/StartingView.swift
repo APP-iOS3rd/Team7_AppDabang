@@ -37,6 +37,7 @@ struct StartingView: View {
             }
             .padding()
         }
+        .tint(.pink)
     }
 }
 
