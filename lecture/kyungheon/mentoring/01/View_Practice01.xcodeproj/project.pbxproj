@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5697A7E52B008F5700ADBBD1 /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697A7E42B008F5700ADBBD1 /* ApiModel.swift */; };
+		5697A7E72B008F9800ADBBD1 /* SearchApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697A7E62B008F9800ADBBD1 /* SearchApiManager.swift */; };
+		5697A7E92B00B34300ADBBD1 /* Seach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697A7E82B00B34300ADBBD1 /* Seach.swift */; };
+		5697A7EC2B00B49300ADBBD1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5697A7EB2B00B49300ADBBD1 /* SearchViewModel.swift */; };
 		56AC34012AF88A4800A100BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AC34002AF88A4800A100BF /* MainView.swift */; };
 		56AC34032AF88AED00A100BF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AC34022AF88AED00A100BF /* Login.swift */; };
 		56AC34052AF89BE800A100BF /* Email+Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AC34042AF89BE800A100BF /* Email+Password.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5697A7E42B008F5700ADBBD1 /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		5697A7E62B008F9800ADBBD1 /* SearchApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchApiManager.swift; sourceTree = "<group>"; };
+		5697A7E82B00B34300ADBBD1 /* Seach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seach.swift; sourceTree = "<group>"; };
+		5697A7EB2B00B49300ADBBD1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		56AC34002AF88A4800A100BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		56AC34022AF88AED00A100BF /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		56AC34042AF89BE800A100BF /* Email+Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Email+Password.swift"; sourceTree = "<group>"; };
@@ -48,12 +56,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5697A7EA2B00B46D00ADBBD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56AC34062AF8A52E00A100BF /* LoginViewModel.swift */,
+				56AC34122AF910F300A100BF /* LoginViewModel+update.swift */,
+				5697A7EB2B00B49300ADBBD1 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		56AC340E2AF90F0F00A100BF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				56AC34142AF9116900A100BF /* ChildView */,
 				56AC34002AF88A4800A100BF /* MainView.swift */,
 				56AC34022AF88AED00A100BF /* Login.swift */,
+				5697A7E82B00B34300ADBBD1 /* Seach.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -62,8 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				56AF0B8A2AEEB377009AF8A2 /* LoginModel.swift */,
-				56AC34062AF8A52E00A100BF /* LoginViewModel.swift */,
-				56AC34122AF910F300A100BF /* LoginViewModel+update.swift */,
+				5697A7E42B008F5700ADBBD1 /* ApiModel.swift */,
+				5697A7E62B008F9800ADBBD1 /* SearchApiManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -101,6 +120,7 @@
 				56AF0B7C2AEEB368009AF8A2 /* View_Practice01App.swift */,
 				56AC34112AF910B300A100BF /* Model */,
 				56AC340E2AF90F0F00A100BF /* View */,
+				5697A7EA2B00B46D00ADBBD1 /* ViewModel */,
 				56AF0B802AEEB36B009AF8A2 /* Assets.xcassets */,
 				56AF0B822AEEB36B009AF8A2 /* Preview Content */,
 			);
@@ -185,11 +205,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5697A7E72B008F9800ADBBD1 /* SearchApiManager.swift in Sources */,
 				56AF0B8B2AEEB377009AF8A2 /* LoginModel.swift in Sources */,
 				56AC34132AF910F300A100BF /* LoginViewModel+update.swift in Sources */,
 				56AC34032AF88AED00A100BF /* Login.swift in Sources */,
 				56AC340B2AF8E3BD00A100BF /* CompleteButton.swift in Sources */,
+				5697A7E52B008F5700ADBBD1 /* ApiModel.swift in Sources */,
 				56AC34052AF89BE800A100BF /* Email+Password.swift in Sources */,
+				5697A7E92B00B34300ADBBD1 /* Seach.swift in Sources */,
+				5697A7EC2B00B49300ADBBD1 /* SearchViewModel.swift in Sources */,
 				56AC34072AF8A52E00A100BF /* LoginViewModel.swift in Sources */,
 				56AC34102AF9102300A100BF /* CustomTextFieldStyle.swift in Sources */,
 				56AC34012AF88A4800A100BF /* MainView.swift in Sources */,
