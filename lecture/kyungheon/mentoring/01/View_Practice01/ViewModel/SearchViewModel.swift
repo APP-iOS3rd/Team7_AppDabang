@@ -14,6 +14,7 @@ class SearchViewModel: ObservableObject {
     
     private let searchApiManager = SearchApiManager.shared
     
+    
     func loadSearchData() async {
         guard !keyword.isEmpty else { // 비어있을 때 방지
             return
