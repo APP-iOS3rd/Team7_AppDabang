@@ -9,13 +9,20 @@
 import Foundation
 import CoreLocation
 
+
+
 protocol WeatherManagerDelegate {
     func didUpdateWeather(_ weatherManager: Weathermanager, weather: WeatherModel)
     func didFailWithError(error: Error)
 }
 
-struct Weathermanager{
-    let weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=ecc3373ffe347304fd4ab1e4bbec05b7&units=metric"
+struct Weathermanager {
+    
+    private let apikey = Bundle.main.infoDictionary?["API_KEY"] as! String
+    
+    var weatherURL: String {
+        return "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=\(apikey)"
+    }
     
     var delegate: WeatherManagerDelegate?
     
