@@ -18,6 +18,8 @@
 		090FE8A32AFCECBF004C26A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE8A22AFCECBF004C26A1 /* NetworkManager.swift */; };
 		090FE8A52AFCF209004C26A1 /* FaceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 090FE8A42AFCF209004C26A1 /* FaceInfo.plist */; };
 		090FE8A72AFCF2EB004C26A1 /* LookLike++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */; };
+		090FE9CB2B050963004C26A1 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE9CA2B050963004C26A1 /* PhotoPicker.swift */; };
+		090FE9CD2B05210D004C26A1 /* CameraSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE9CC2B05210D004C26A1 /* CameraSnap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		090FE8A22AFCECBF004C26A1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		090FE8A42AFCF209004C26A1 /* FaceInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FaceInfo.plist; sourceTree = "<group>"; };
 		090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LookLike++Bundle.swift"; sourceTree = "<group>"; };
+		090FE9CA2B050963004C26A1 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		090FE9CC2B05210D004C26A1 /* CameraSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSnap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				090FE8622AFBC77A004C26A1 /* MentoringAPIApp.swift */,
-				090FE8722AFBD16B004C26A1 /* LauchedView.swift */,
-				090FE8642AFBC77A004C26A1 /* StartingView.swift */,
-				090FE8702AFBCB04004C26A1 /* SelectView.swift */,
+				090FE9C82B050933004C26A1 /* Start */,
+				090FE9C92B05094A004C26A1 /* Select */,
 				090FE8792AFC584D004C26A1 /* Network */,
 				090FE8742AFBD4CB004C26A1 /* Model */,
 				090FE8662AFBC77C004C26A1 /* Assets.xcassets */,
@@ -102,6 +105,25 @@
 				090FE8A22AFCECBF004C26A1 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		090FE9C82B050933004C26A1 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				090FE8722AFBD16B004C26A1 /* LauchedView.swift */,
+				090FE8642AFBC77A004C26A1 /* StartingView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		090FE9C92B05094A004C26A1 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				090FE8702AFBCB04004C26A1 /* SelectView.swift */,
+				090FE9CA2B050963004C26A1 /* PhotoPicker.swift */,
+				090FE9CC2B05210D004C26A1 /* CameraSnap.swift */,
+			);
+			path = Select;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090FE9CD2B05210D004C26A1 /* CameraSnap.swift in Sources */,
 				090FE8652AFBC77A004C26A1 /* StartingView.swift in Sources */,
 				090FE8732AFBD16B004C26A1 /* LauchedView.swift in Sources */,
+				090FE9CB2B050963004C26A1 /* PhotoPicker.swift in Sources */,
 				090FE8632AFBC77A004C26A1 /* MentoringAPIApp.swift in Sources */,
 				090FE8A72AFCF2EB004C26A1 /* LookLike++Bundle.swift in Sources */,
 				090FE8A32AFCECBF004C26A1 /* NetworkManager.swift in Sources */,
@@ -319,11 +343,14 @@
 				DEVELOPMENT_TEAM = CT6J74BCFP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"앱에서 카메라를 사용하기 위하여 카메라에 접근권한을 요청합니다.\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"앱에서 사진을 사용하기 위하여 앨범에 접근권한을 요청합니다.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,11 +375,14 @@
 				DEVELOPMENT_TEAM = CT6J74BCFP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"앱에서 카메라를 사용하기 위하여 카메라에 접근권한을 요청합니다.\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"앱에서 사진을 사용하기 위하여 앨범에 접근권한을 요청합니다.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

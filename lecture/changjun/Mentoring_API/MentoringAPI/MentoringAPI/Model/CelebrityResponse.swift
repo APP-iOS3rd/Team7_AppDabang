@@ -62,3 +62,23 @@ extension Face: Decodable {
         celebrityConfidence = try celebrity.decode(Double.self, forKey: .confidence)
     }
 }
+
+//struct CelebrityResponse: Decodable {
+//    let info: InfoData
+//    let faces: [FaceData]
+//}
+//struct InfoData: Decodable {
+//    let size: SizeData
+//    let faceCount: Int
+//}
+//struct SizeData: Decodable {
+//    let width: Int
+//    let height: Int
+//}
+//struct FaceData: Decodable {
+//    let celebrity: [CelebrityData]
+//}
+//struct CelebrityData: Decodable {
+//    let value: String
+//    let confidence: Double
+//}

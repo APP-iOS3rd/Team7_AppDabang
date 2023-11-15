@@ -8,7 +8,6 @@
 import SwiftUI
 
 class TestViewController: UIViewController {
-    
     let jsonSample = """
                     {
                      "info": {
@@ -47,12 +46,10 @@ class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         guard
             let data = self.jsonSample.data(using: .utf8),
             let response = try? JSONDecoder().decode(CelebrityResponse.self, from: data)
         else { return }
-        
         print(response.faceCount)
         print(response.faces[0])
     }
