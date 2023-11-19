@@ -6,39 +6,48 @@
 //
 
 import SwiftUI
-import UIKit
+import PhotosUI
 
-// MARK: - UIKit 의 UIImagePickerController 를 사용하기 위함
+// MARK: - PHPickerViewController 를 사용
 struct PhotoPicker: UIViewControllerRepresentable {
     @Binding var selectedPhoto: UIImage?
     @Binding var isAlbumPresented: Bool
 
-    class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-        var parent: PhotoPicker
-        init(parent: PhotoPicker) {
+    class Coordinator: PHPickerViewControllerDelegate {
+        private let parent: PhotoPicker
+        
+        init(_ parent: PhotoPicker) {
             self.parent = parent
         }
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            if let uiImage = info[.originalImage] as? UIImage {
-                parent.selectedPhoto = uiImage
+        
+        func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+            if let itemProvider = results.first?.itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
+                itemProvider.loadObject(ofClass: UIImage.self) { (image, error) in
+                    DispatchQueue.main.async {
+                        self.parent.selectedPhoto = image as? UIImage
+                    }
+                }
             }
-            parent.isAlbumPresented = false
-        }
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
             parent.isAlbumPresented = false
         }
     }
     
     func makeCoordinator() -> Coordinator {
-        return Coordinator(parent: self)
+        Coordinator(self)
     }
-    func makeUIViewController(context: UIViewControllerRepresentableContext<PhotoPicker>) -> UIImagePickerController {
-        let picker = UIImagePickerController()
-        picker.sourceType =  .photoLibrary
-        picker.delegate = context.coordinator
-        return picker
+    
+    func makeUIViewController(context: Context) -> PHPickerViewController {
+        var configuration = PHPickerConfiguration(photoLibrary: .shared())
+        configuration.filter = PHPickerFilter.any(of: [.images])
+        configuration.selectionLimit = 1
+        configuration.preferredAssetRepresentationMode = .current
+        //        configuration.preselectedAssetIdentifiers = selectedPhoto
+        let controller = PHPickerViewController(configuration: configuration)
+        controller.delegate = context.coordinator
+        return controller
     }
-    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<PhotoPicker>) {
+    
+    func updateUIViewController(_ uiViewController: PHPickerViewController, context: Context) {
         //
     }
 }

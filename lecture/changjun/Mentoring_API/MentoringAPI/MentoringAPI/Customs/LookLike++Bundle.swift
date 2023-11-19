@@ -26,7 +26,7 @@ extension Bundle {
             return ""
         }
         guard let resource = NSDictionary(contentsOfFile: file) else { return "" }
-        guard let secret = resource["ID"] as? String else {
+        guard let secret = resource["SECRET"] as? String else {
             fatalError("FaceInf.plist 에 SECRET 을 입력해주세요.")
         }
         return secret

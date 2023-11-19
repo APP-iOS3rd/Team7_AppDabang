@@ -8,24 +8,28 @@
 import SwiftUI
 
 struct StartingView: View {
+    @StateObject var router = Router()
+    
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.path) {
             VStack {
                 Spacer()
-                Text("""
-                    What
-                    celebrity
-                    do I look like?
-                    """)
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                    .padding(.bottom, 40)
-                Text("""
-                    얼굴 사진을 등록하면,
-                    나와 닮은 연예인을 찾을 수 있어요!
-                    """)
+                VStack(alignment: .leading) {
+                    Text("""
+                        What
+                        celebrity
+                        do I look like?
+                        """)
+                        .font(.largeTitle)
+                        .fontWeight(.semibold)
+                        .padding(.bottom, 40)
+                    Text("""
+                        얼굴 사진을 등록하면,
+                        나와 닮은 연예인을 찾을 수 있어요!
+                        """)
+                }
                 Spacer()
-                NavigationLink(destination: SelectView()) {
+                NavigationLink(value: Route.selectView) {
                     Text("시작하기")
                         .foregroundStyle(Color.white)
                         .fontWeight(.semibold)
@@ -33,10 +37,15 @@ struct StartingView: View {
                 }
                 .padding(12)
                 .background(Color.pink)
-                .cornerRadius(10)
+                .cornerRadius(8)
+                .padding([.bottom, .horizontal], 20)
+                .navigationDestination(for: Route.self) { _ in
+                    SelectView()
+                }
             }
             .padding()
         }
+        .environmentObject(router)
         .tint(.pink)
     }
 }

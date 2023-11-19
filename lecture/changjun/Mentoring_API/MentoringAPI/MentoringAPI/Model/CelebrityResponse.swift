@@ -23,11 +23,11 @@ struct SizeData: Decodable {
     let height: Int
 }
 
-struct FaceData: Decodable {
+struct FaceData: Decodable, Hashable {
     let celebrity: CelebrityData
 }
 
-struct CelebrityData: Decodable {
+struct CelebrityData: Decodable, Hashable {
     let value: String
     let confidence: Double
 }

@@ -19,7 +19,8 @@ struct MentoringAPIApp: App {
                 } else {
                     StartingView()
                 }
-            }.onAppear {
+            }
+            .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     isLoading = false
                 }

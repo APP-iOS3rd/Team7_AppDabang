@@ -18,6 +18,7 @@ struct LauchedView: View {
             Text("👾 Made by Phang")
                 .foregroundStyle(Color.gray)
                 .font(.footnote)
+                .padding(.bottom, 20)
         }
         .padding()
     }

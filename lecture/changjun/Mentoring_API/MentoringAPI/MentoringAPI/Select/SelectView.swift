@@ -6,38 +6,57 @@
 //
 
 import SwiftUI
-import PhotosUI
 
 struct SelectView: View {
     @State private var selectedPhoto: UIImage?
     @State private var isAlbumPresented = false
     @State private var isCameraPresented = false
+    @State private var isShowAlert = false
+    @State private var showResult = false
+    @EnvironmentObject var router: Router
     
     var body: some View {
-        VStack(spacing: 50) {
-            Text("이미지를 선택해주세요!")
-                .font(.title3)
-                .fontWeight(.semibold)
+        VStack(spacing: 40) {
             if let image = selectedPhoto {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 300)
+                    .frame(width: 250)
             } else {
+                Text("이미지를 선택해주세요!")
+                    .font(.title3)
+                    .fontWeight(.semibold)
                 Rectangle()
                     .fill(.background)
-                    .frame(width: 300, height: 300)
-                    .border(Color.gray, width: 0.5)
+                    .frame(width: 250, height: 250)
+                    .border(Color.pink, width: 0.3)
             }
             Button {
-                // 이미지 파일 -> 이미지 바이너리 파일 변환
-                // Navigation 으로 결과 화면 이동 ( 변환 중에 loading View 보여줄 것 )
+                if let _ = selectedPhoto {
+                    router.path.append(Route.loadingView)
+                    showResult = true
+                } else {
+                    isShowAlert.toggle()
+                }
             } label: {
                 Text("나와 닮은 연예인 결과 보러가기")
+                    .padding(6)
                     .fontWeight(.semibold)
             }
             .buttonStyle(.borderedProminent)
             .tint(.pink)
+            .alert(isPresented: $isShowAlert) {
+                Alert(title: Text("Error"),
+                      message: Text("이미지를 선택해주세요!"),
+                      dismissButton: .default(Text("돌아가기")))
+            }
+        }
+        .navigationDestination(isPresented: $showResult) {
+            if let image = selectedPhoto {
+                LoadingView(image: image)
+            } else {
+                EmptyView()
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -65,13 +84,9 @@ struct SelectView: View {
                 }
             }
         }
-        // Json 파싱 되는지 테스트
-        .onAppear {
-            TestViewController().viewDidLoad()
-        }
     }
 }
 
 #Preview {
-    SelectView()
+    SelectView().environmentObject(Router())
 }
