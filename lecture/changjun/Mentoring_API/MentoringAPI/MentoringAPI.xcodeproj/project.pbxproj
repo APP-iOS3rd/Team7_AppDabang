@@ -18,6 +18,18 @@
 		090FE8A32AFCECBF004C26A1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE8A22AFCECBF004C26A1 /* NetworkManager.swift */; };
 		090FE8A52AFCF209004C26A1 /* FaceInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 090FE8A42AFCF209004C26A1 /* FaceInfo.plist */; };
 		090FE8A72AFCF2EB004C26A1 /* LookLike++Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */; };
+		090FE9CB2B050963004C26A1 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE9CA2B050963004C26A1 /* PhotoPicker.swift */; };
+		090FE9CD2B05210D004C26A1 /* CameraSnap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE9CC2B05210D004C26A1 /* CameraSnap.swift */; };
+		090FE9F12B05A961004C26A1 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE9F02B05A961004C26A1 /* ResultView.swift */; };
+		090FE9F42B05B15A004C26A1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FE9F32B05B15A004C26A1 /* LoadingView.swift */; };
+		090FEA182B05D336004C26A1 /* LoadingWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FEA172B05D336004C26A1 /* LoadingWheel.swift */; };
+		090FEA1C2B06090F004C26A1 /* LoadingDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FEA1B2B06090F004C26A1 /* LoadingDots.swift */; };
+		090FEA202B067E83004C26A1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FEA1F2B067E83004C26A1 /* Router.swift */; };
+		0974AEFE2B0A45130094EE7B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0974AEFD2B0A45130094EE7B /* Errors.swift */; };
+		09FD20502B0A57F1009FD43C /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD204F2B0A57F1009FD43C /* UIImage+.swift */; };
+		09FD20522B0A5950009FD43C /* NoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD20512B0A5950009FD43C /* NoResult.swift */; };
+		09FD20542B0A595A009FD43C /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD20532B0A595A009FD43C /* ResultList.swift */; };
+		09FD20572B0ADC3F009FD43C /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD20562B0ADC3F009FD43C /* Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +45,18 @@
 		090FE8A22AFCECBF004C26A1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		090FE8A42AFCF209004C26A1 /* FaceInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FaceInfo.plist; sourceTree = "<group>"; };
 		090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LookLike++Bundle.swift"; sourceTree = "<group>"; };
+		090FE9CA2B050963004C26A1 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		090FE9CC2B05210D004C26A1 /* CameraSnap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSnap.swift; sourceTree = "<group>"; };
+		090FE9F02B05A961004C26A1 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		090FE9F32B05B15A004C26A1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		090FEA172B05D336004C26A1 /* LoadingWheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingWheel.swift; sourceTree = "<group>"; };
+		090FEA1B2B06090F004C26A1 /* LoadingDots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDots.swift; sourceTree = "<group>"; };
+		090FEA1F2B067E83004C26A1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		0974AEFD2B0A45130094EE7B /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		09FD204F2B0A57F1009FD43C /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		09FD20512B0A5950009FD43C /* NoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResult.swift; sourceTree = "<group>"; };
+		09FD20532B0A595A009FD43C /* ResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
+		09FD20562B0ADC3F009FD43C /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,11 +90,14 @@
 			isa = PBXGroup;
 			children = (
 				090FE8622AFBC77A004C26A1 /* MentoringAPIApp.swift */,
-				090FE8722AFBD16B004C26A1 /* LauchedView.swift */,
-				090FE8642AFBC77A004C26A1 /* StartingView.swift */,
-				090FE8702AFBCB04004C26A1 /* SelectView.swift */,
+				090FEA1F2B067E83004C26A1 /* Router.swift */,
+				090FE9C82B050933004C26A1 /* Start */,
+				090FE9C92B05094A004C26A1 /* Select */,
+				09FD20552B0A5962009FD43C /* Loading */,
+				090FE9F22B05A971004C26A1 /* Result */,
 				090FE8792AFC584D004C26A1 /* Network */,
 				090FE8742AFBD4CB004C26A1 /* Model */,
+				09FD204E2B0A57CE009FD43C /* Customs */,
 				090FE8662AFBC77C004C26A1 /* Assets.xcassets */,
 				090FE8682AFBC77C004C26A1 /* Preview Content */,
 			);
@@ -89,9 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				090FE8752AFBD4F5004C26A1 /* CelebrityResponse.swift */,
+				0974AEFD2B0A45130094EE7B /* Errors.swift */,
 				090FE8772AFBDA8D004C26A1 /* TestViewController.swift */,
-				090FE8A42AFCF209004C26A1 /* FaceInfo.plist */,
-				090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -102,6 +128,56 @@
 				090FE8A22AFCECBF004C26A1 /* NetworkManager.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		090FE9C82B050933004C26A1 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				090FE8722AFBD16B004C26A1 /* LauchedView.swift */,
+				090FE8642AFBC77A004C26A1 /* StartingView.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		090FE9C92B05094A004C26A1 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				090FE8702AFBCB04004C26A1 /* SelectView.swift */,
+				090FE9CC2B05210D004C26A1 /* CameraSnap.swift */,
+				090FE9CA2B050963004C26A1 /* PhotoPicker.swift */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
+		090FE9F22B05A971004C26A1 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				090FE9F02B05A961004C26A1 /* ResultView.swift */,
+				09FD20512B0A5950009FD43C /* NoResult.swift */,
+				09FD20532B0A595A009FD43C /* ResultList.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		09FD204E2B0A57CE009FD43C /* Customs */ = {
+			isa = PBXGroup;
+			children = (
+				09FD20562B0ADC3F009FD43C /* Custom.swift */,
+				090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */,
+				09FD204F2B0A57F1009FD43C /* UIImage+.swift */,
+				090FE8A42AFCF209004C26A1 /* FaceInfo.plist */,
+			);
+			path = Customs;
+			sourceTree = "<group>";
+		};
+		09FD20552B0A5962009FD43C /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				090FE9F32B05B15A004C26A1 /* LoadingView.swift */,
+				090FEA1B2B06090F004C26A1 /* LoadingDots.swift */,
+				090FEA172B05D336004C26A1 /* LoadingWheel.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +251,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090FEA1C2B06090F004C26A1 /* LoadingDots.swift in Sources */,
+				090FE9CD2B05210D004C26A1 /* CameraSnap.swift in Sources */,
+				09FD20542B0A595A009FD43C /* ResultList.swift in Sources */,
 				090FE8652AFBC77A004C26A1 /* StartingView.swift in Sources */,
+				090FE9F12B05A961004C26A1 /* ResultView.swift in Sources */,
+				0974AEFE2B0A45130094EE7B /* Errors.swift in Sources */,
+				09FD20502B0A57F1009FD43C /* UIImage+.swift in Sources */,
 				090FE8732AFBD16B004C26A1 /* LauchedView.swift in Sources */,
+				09FD20522B0A5950009FD43C /* NoResult.swift in Sources */,
+				090FE9CB2B050963004C26A1 /* PhotoPicker.swift in Sources */,
+				090FE9F42B05B15A004C26A1 /* LoadingView.swift in Sources */,
 				090FE8632AFBC77A004C26A1 /* MentoringAPIApp.swift in Sources */,
 				090FE8A72AFCF2EB004C26A1 /* LookLike++Bundle.swift in Sources */,
+				090FEA182B05D336004C26A1 /* LoadingWheel.swift in Sources */,
+				09FD20572B0ADC3F009FD43C /* Custom.swift in Sources */,
+				090FEA202B067E83004C26A1 /* Router.swift in Sources */,
 				090FE8A32AFCECBF004C26A1 /* NetworkManager.swift in Sources */,
 				090FE8762AFBD4F5004C26A1 /* CelebrityResponse.swift in Sources */,
 				090FE8782AFBDA8D004C26A1 /* TestViewController.swift in Sources */,
@@ -241,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -298,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -319,11 +407,16 @@
 				DEVELOPMENT_TEAM = CT6J74BCFP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LookLike;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"앱에서 카메라를 사용하기 위하여 카메라에 접근권한을 요청합니다.\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"앱에서 사진을 사용하기 위하여 앨범에 접근권한을 요청합니다.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -348,11 +441,16 @@
 				DEVELOPMENT_TEAM = CT6J74BCFP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LookLike;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"앱에서 카메라를 사용하기 위하여 카메라에 접근권한을 요청합니다.\"";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"앱에서 사진을 사용하기 위하여 앨범에 접근권한을 요청합니다.\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
