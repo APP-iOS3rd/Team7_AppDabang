@@ -23,7 +23,7 @@ class NetworkManager {
     func request<T: Decodable>(fromURL urlString: String,
                                httpMethod: HttpMethod = .post,
                                imageData: Data) async throws -> T {
-        // url 검증
+        // url
         guard let url = URL(string: urlString) else {
             throw Errors.invalidURL
         }

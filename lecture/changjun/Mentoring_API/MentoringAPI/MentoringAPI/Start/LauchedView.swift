@@ -12,8 +12,7 @@ struct LauchedView: View {
         VStack {
             Spacer()
             Text("U Look Like")
-                .font(.largeTitle)
-                .bold()
+                .modifier(MainTitle())
             Spacer()
             Text("👾 Made by Phang")
                 .foregroundStyle(Color.gray)

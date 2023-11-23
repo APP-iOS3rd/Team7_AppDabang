@@ -20,13 +20,13 @@ struct StartingView: View {
                         celebrity
                         do I look like?
                         """)
-                        .font(.largeTitle)
-                        .fontWeight(.semibold)
+                        .modifier(MainTitle())
                         .padding(.bottom, 40)
                     Text("""
                         얼굴 사진을 등록하면,
                         나와 닮은 연예인을 찾을 수 있어요!
                         """)
+                        .modifier(SubTitle3())
                 }
                 Spacer()
                 NavigationLink(value: Route.selectView) {

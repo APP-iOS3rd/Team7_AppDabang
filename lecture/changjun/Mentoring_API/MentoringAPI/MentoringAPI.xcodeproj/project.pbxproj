@@ -29,6 +29,7 @@
 		09FD20502B0A57F1009FD43C /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD204F2B0A57F1009FD43C /* UIImage+.swift */; };
 		09FD20522B0A5950009FD43C /* NoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD20512B0A5950009FD43C /* NoResult.swift */; };
 		09FD20542B0A595A009FD43C /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD20532B0A595A009FD43C /* ResultList.swift */; };
+		09FD20572B0ADC3F009FD43C /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FD20562B0ADC3F009FD43C /* Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		09FD204F2B0A57F1009FD43C /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		09FD20512B0A5950009FD43C /* NoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResult.swift; sourceTree = "<group>"; };
 		09FD20532B0A595A009FD43C /* ResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
+		09FD20562B0ADC3F009FD43C /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		09FD204E2B0A57CE009FD43C /* Customs */ = {
 			isa = PBXGroup;
 			children = (
+				09FD20562B0ADC3F009FD43C /* Custom.swift */,
 				090FE8A62AFCF2EB004C26A1 /* LookLike++Bundle.swift */,
 				09FD204F2B0A57F1009FD43C /* UIImage+.swift */,
 				090FE8A42AFCF209004C26A1 /* FaceInfo.plist */,
@@ -262,6 +265,7 @@
 				090FE8632AFBC77A004C26A1 /* MentoringAPIApp.swift in Sources */,
 				090FE8A72AFCF2EB004C26A1 /* LookLike++Bundle.swift in Sources */,
 				090FEA182B05D336004C26A1 /* LoadingWheel.swift in Sources */,
+				09FD20572B0ADC3F009FD43C /* Custom.swift in Sources */,
 				090FEA202B067E83004C26A1 /* Router.swift in Sources */,
 				090FE8A32AFCECBF004C26A1 /* NetworkManager.swift in Sources */,
 				090FE8762AFBD4F5004C26A1 /* CelebrityResponse.swift in Sources */,

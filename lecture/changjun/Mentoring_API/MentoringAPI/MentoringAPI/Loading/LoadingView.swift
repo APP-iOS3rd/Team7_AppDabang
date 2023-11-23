@@ -21,8 +21,7 @@ struct LoadingView: View {
     var body: some View {
         VStack {
             Text("결과를 받아오는 중 입니다.")
-                .font(.title3)
-                .fontWeight(.semibold)
+                .modifier(SubTitle3())
             LoadingDots()
                 .padding(.top, 60)
         }

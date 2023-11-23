@@ -24,8 +24,7 @@ struct SelectView: View {
                     .frame(width: 250)
             } else {
                 Text("이미지를 선택해주세요!")
-                    .font(.title3)
-                    .fontWeight(.semibold)
+                    .modifier(SubTitle3())
                 Rectangle()
                     .fill(.background)
                     .frame(width: 250, height: 250)

@@ -13,12 +13,11 @@ struct NoResult: View {
     var body: some View {
         VStack(spacing: 50) {
             Text("아쉽게도 닮은 사람을 찾지 못했어요 🥲")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .modifier(SubTitle2())
             Button {
                 router.path.removeLast()
             } label: {
-                Text("디시 하기")
+                Text("다시 하기")
                     .padding(6)
                     .fontWeight(.semibold)
             }

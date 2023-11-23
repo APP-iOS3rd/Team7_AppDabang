@@ -16,8 +16,7 @@ struct ResultList: View {
     var body: some View {
         VStack(spacing: 40) {
             Text("U Look Like...")
-                .font(.title2)
-                .fontWeight(.semibold)
+                .modifier(SubTitle2())
             VStack {
                 ForEach(result.faces, id: \.self) { faces in
                     HStack(spacing: 16) {
