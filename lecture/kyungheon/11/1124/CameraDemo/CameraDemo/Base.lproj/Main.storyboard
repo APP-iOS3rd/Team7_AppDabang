@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CameraDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bCS-Le-dv1">
+                                <rect key="frame" x="16" y="75" width="361" height="686"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duT-7y-kn5">
+                                <rect key="frame" x="16" y="777" width="393" height="49"/>
+                                <items>
+                                    <barButtonItem title="Camera" id="4eN-Ea-CY7">
+                                        <connections>
+                                            <action selector="useCamera:" destination="BYZ-38-t0r" id="H0p-fS-k5t"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Camera Roll" id="JGZ-EC-UI7">
+                                        <connections>
+                                            <action selector="useCameraRoll:" destination="BYZ-38-t0r" id="1bJ-Sc-AEW"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Play Movie" id="5Zc-ga-uLE">
+                                        <connections>
+                                            <segue destination="Hhv-z5-x5y" kind="show" id="kYG-iB-8du"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bCS-Le-dv1" secondAttribute="trailing" constant="16" id="3cA-uB-2nM"/>
+                            <constraint firstItem="duT-7y-kn5" firstAttribute="top" secondItem="bCS-Le-dv1" secondAttribute="bottom" constant="16" id="5vT-Ku-d9k"/>
+                            <constraint firstItem="duT-7y-kn5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="16" id="QEf-JX-6Hy"/>
+                            <constraint firstItem="bCS-Le-dv1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="bue-e7-TFB"/>
+                            <constraint firstItem="duT-7y-kn5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="8" id="h2H-Yh-lVt"/>
+                            <constraint firstItem="duT-7y-kn5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="rqL-dR-Tfa"/>
+                            <constraint firstItem="bCS-Le-dv1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xzb-3I-EMo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bCS-Le-dv1" id="HX2-ZR-EiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="-21"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="la1-1n-rZB">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="Hhv-z5-x5y" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eUK-oO-q6p"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91J-UL-5wX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="-18"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
